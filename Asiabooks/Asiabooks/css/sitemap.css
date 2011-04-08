@@ -1,0 +1,31 @@
+@charset "utf-8";
+.f12_arial {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}
+a.menu:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}
+a.menu:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}
+a.menu:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #73af19;
+	text-decoration:none;
+}
+a.menu:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}

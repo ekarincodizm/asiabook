@@ -1,0 +1,64 @@
+@charset "utf-8";
+.f12_arial {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}
+.f12_green {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #79bc15;
+	text-decoration:none;
+	font-weight: bold;
+}
+.f14_arial {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}
+
+.h1_content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #ff6600;
+	margin: 0px;
+	padding: 0px;
+}
+a.menu:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}
+.bg_quote {
+	background-image: url(../images/quote.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_dot_line {
+	background-image: url(../images/dot_line.gif);
+	background-repeat: repeat-x;
+	background-position: left;
+}
+
+
+a.menu:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}
+a.menu:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #73af19;
+	text-decoration:none;
+}
+a.menu:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration:none;
+}

@@ -1,0 +1,349 @@
+﻿.productlist li
+{
+    display: inline;
+    float: left;
+    margin-left: 20px;
+    margin-right: 55px;
+    margin-bottom: 25px;
+
+}
+.labelBest_Number
+{
+	font-family:Arial;
+	font-size:20pt;
+	color:#FF3300;
+}
+.labelprice
+{
+	font-family:Arial;
+	font-size:9pt;
+	color:#696969;
+	font-weight:bold;
+}
+.labelpriceusd
+{
+	font-family:Arial;
+	font-size:9pt;
+	color:#FF8000;
+}
+.labelBest_Title
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#008000;
+}
+.labelBest_Author
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#008000;
+}
+a.menu:link 
+{
+	font-size: 9pt;
+	color: #666666;
+	text-decoration:none;
+}
+a.menu:visited 
+{
+	font-size: 9pt;
+	color: #666666;
+	text-decoration:none;
+}
+a.menu:hover 
+{
+	font-size: 9pt;
+	color: #333333;
+	text-decoration:underline;
+}
+a.menu:active 
+{
+	font-size: 9pt;
+	color: #666666;
+}
+.grdBestseller_head
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#333333;
+	font-weight:bold;	
+}
+.grdBestseller_title
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#008000;
+	font-weight:bold;	
+}
+.grdBestseller_detail
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;	
+}
+.detailbook_title
+{
+	font-family:Arial;
+	font-size:12pt;
+	color:#006633;
+	font-weight:bold;	
+}
+.detailbook_head
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	font-weight:bold;	
+}
+.detailbook_detail
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;	
+}
+.see_more
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#006633;	
+}
+.see_more2
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#006600;	
+}
+.font_other
+{
+	font-family:Arial;
+	font-size:9pt;
+	color:#696969;	
+	line-height: 15px; 
+}
+.font_book_title
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;	
+}
+.font_about_us
+{
+	font-family:Arial;
+	font-size:9pt;
+	color:#696969;	
+	line-height: 18px; 
+}
+.font_member_ship
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;	
+	line-height: 18px; 
+}
+.search_order
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;	
+	font-weight:bold;
+}
+.label_store_event_head
+{
+	font-family:Arial;
+	font-size:9pt;
+	color:#339933;	
+	font-weight:bold;
+}
+.label_store_event_detail
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;	
+}
+.label_head
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:bold;
+	color:#99cc00;	
+}
+.label_recommended_title
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:bold;
+	color:#ffffff;	
+}
+.label_thailand_title
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:bold;
+	color:#008000;	
+}
+/* Class ราคา Your Price */
+yourprice
+{
+	font-family:Arial;
+	font-size:9pt;
+	font-weight:bold;
+	color:#006600;
+	display:block;
+	height:15px;
+}
+/* Class ราคา Save */
+pricesave
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ราคาบาท */
+priceBaht
+{
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ราคาUSD */
+priceUSD
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#FF8000;
+	display:block;
+	height:15px;
+}
+.labelaccount
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	display:block;
+}
+.labelmyaccount_head
+{
+	font-family:Arial;
+	font-size:9pt;
+	color:#696969;
+	font-weight:bold;
+}
+.labelmyaccount_detail
+{
+	font-family:Arial;
+	font-size:9pt;
+	color:#696969;
+}
+.labelsort_by
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	font-weight:bold;
+}
+.labeedit_profile_head
+{
+	font-family:Arial;
+	font-size:10pt;
+	color:#008000;
+	font-weight:bold;
+}
+.labeedit_profile_detail
+{
+	font-family:Arial;
+	font-size:9pt;
+	color:#696969;
+}
+/* Class ราคา Your Price */
+.yourprice_book
+{
+	font-family:Arial;
+	font-size:9pt;
+	font-weight:bold;
+	color:#006600;
+	display:block;
+	height:15px;
+}
+/* Class ราคา Save */
+.pricesave_book
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ราคาบาท */
+.priceBaht_book
+{
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ราคาUSD */
+.priceUSD_book
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#FF8000;
+	display:block;
+	height:15px;
+}
+.autocomplete_completionListElement 
+{  
+      margin : 0px;
+      padding: 0 0 5px 2px;
+      border: solid 1px green;
+      cursor : hand;
+      height : auto;
+      width: auto;
+      z-index: 900;
+      list-style-type : none;
+      font-size:small;
+}
+.header_other
+{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:15pt;
+	color:#66CC00;
+}
+.header_other_ab
+{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:15pt;
+	color:#66CC00;
+}
+.header_other_bz
+{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:15pt;
+	color:#1A2783;
+}
+.font_top5
+{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:10pt;
+	color: White;
+}
+.ModelBackground
+{
+    background-color:Gray;
+    filter:alpha(opacity=70);
+    opacity:0.7;
+}

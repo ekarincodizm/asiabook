@@ -1,0 +1,31 @@
+<fulfillmentToken fulfillmentType="buy" xmlns="http://ns.adobe.com/adept">
+  <distributor>urn:uuid:e49a98b0-ff90-4eaf-b8c5-71238284dfdd</distributor>
+  <operatorURL>http://acs4.ebookshipping.com:8080/fulfillment</operatorURL>
+  <expiration>2010-12-09T07:38:27+00:00</expiration>
+  <transaction>GARDEPUB-117534-978000723689306</transaction>
+  <resourceItemInfo>
+    <resource>urn:uuid:8f0cc833-2c42-4a2c-aeed-d3d5bc2bb72e</resource>
+    <resourceItem>1</resourceItem>
+    <metadata>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Hunter's Run</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin, George R. R.</dc:creator>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/epub+zip</dc:format>
+      <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">HarperCollins Publishers</dc:publisher>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">en</dc:language>
+      <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/"></dc:description>
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">9780007236893</dc:identifier>
+    </metadata>
+    <src>http://acs4.ebookshipping.com:8080/media/978/000/723/3797C89B9BF5A.epub</src>
+    <downloadType>simple</downloadType>
+    <licenseToken>
+      <resource>urn:uuid:8f0cc833-2c42-4a2c-aeed-d3d5bc2bb72e</resource>
+      <permissions>
+        <display/>
+        <print>
+          <count initial="401"/>
+        </print>
+      </permissions>
+    </licenseToken>
+  </resourceItemInfo>
+  <hmac>KCxQX4edSv3uBAq+LkfFZB24LeQ=</hmac>
+</fulfillmentToken>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PaymentCreditCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallServiceURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IPAddress" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBaht" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ThanksURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InoviceCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentCreditCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentCreditCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentCreditCard_Kung">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallServiceURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IPAddress" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBaht" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ThanksURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InoviceCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentCreditCard_KungResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentCreditCard_KungResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentPayPal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallServiceURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IPAddress" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBaht" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CancelURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ThanksURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InoviceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentPayPalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentPayPalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentCounterService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallServiceURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IPAddress" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemberNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TotalAmount" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentCounterServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentCounterServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentBankTransfer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallServiceURL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IPAddress" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemberNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TotalAmount" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentBankTransferResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentBankTransferResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Payment_KBank">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PMGWRESP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Payment_KBankResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Payment_KBankResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Payment_KBank_Not_SSL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HOSTRESP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="REFCODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AUTHCODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RETURNINV" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UAID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CARDNUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AMOUNT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FILLSPACE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Payment_KBank_Not_SSLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Payment_KBank_Not_SSLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Payment_SendInvoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Invoice" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Payment_SendInvoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Payment_SendInvoiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PaymentCreditCardSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentCreditCard" />
+  </wsdl:message>
+  <wsdl:message name="PaymentCreditCardSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentCreditCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentCreditCard_KungSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentCreditCard_Kung" />
+  </wsdl:message>
+  <wsdl:message name="PaymentCreditCard_KungSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentCreditCard_KungResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentPayPalSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentPayPal" />
+  </wsdl:message>
+  <wsdl:message name="PaymentPayPalSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentPayPalResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentCounterServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentCounterService" />
+  </wsdl:message>
+  <wsdl:message name="PaymentCounterServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentCounterServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentBankTransferSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentBankTransfer" />
+  </wsdl:message>
+  <wsdl:message name="PaymentBankTransferSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentBankTransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="Payment_KBankSoapIn">
+    <wsdl:part name="parameters" element="tns:Payment_KBank" />
+  </wsdl:message>
+  <wsdl:message name="Payment_KBankSoapOut">
+    <wsdl:part name="parameters" element="tns:Payment_KBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="Payment_KBank_Not_SSLSoapIn">
+    <wsdl:part name="parameters" element="tns:Payment_KBank_Not_SSL" />
+  </wsdl:message>
+  <wsdl:message name="Payment_KBank_Not_SSLSoapOut">
+    <wsdl:part name="parameters" element="tns:Payment_KBank_Not_SSLResponse" />
+  </wsdl:message>
+  <wsdl:message name="Payment_SendInvoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:Payment_SendInvoice" />
+  </wsdl:message>
+  <wsdl:message name="Payment_SendInvoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:Payment_SendInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PaymentServiceSoap">
+    <wsdl:operation name="PaymentCreditCard">
+      <wsdl:input message="tns:PaymentCreditCardSoapIn" />
+      <wsdl:output message="tns:PaymentCreditCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentCreditCard_Kung">
+      <wsdl:input message="tns:PaymentCreditCard_KungSoapIn" />
+      <wsdl:output message="tns:PaymentCreditCard_KungSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentPayPal">
+      <wsdl:input message="tns:PaymentPayPalSoapIn" />
+      <wsdl:output message="tns:PaymentPayPalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentCounterService">
+      <wsdl:input message="tns:PaymentCounterServiceSoapIn" />
+      <wsdl:output message="tns:PaymentCounterServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentBankTransfer">
+      <wsdl:input message="tns:PaymentBankTransferSoapIn" />
+      <wsdl:output message="tns:PaymentBankTransferSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Payment_KBank">
+      <wsdl:input message="tns:Payment_KBankSoapIn" />
+      <wsdl:output message="tns:Payment_KBankSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Payment_KBank_Not_SSL">
+      <wsdl:input message="tns:Payment_KBank_Not_SSLSoapIn" />
+      <wsdl:output message="tns:Payment_KBank_Not_SSLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Payment_SendInvoice">
+      <wsdl:input message="tns:Payment_SendInvoiceSoapIn" />
+      <wsdl:output message="tns:Payment_SendInvoiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PaymentServiceSoap" type="tns:PaymentServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PaymentCreditCard">
+      <soap:operation soapAction="http://tempuri.org/PaymentCreditCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentCreditCard_Kung">
+      <soap:operation soapAction="http://tempuri.org/PaymentCreditCard_Kung" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentPayPal">
+      <soap:operation soapAction="http://tempuri.org/PaymentPayPal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentCounterService">
+      <soap:operation soapAction="http://tempuri.org/PaymentCounterService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentBankTransfer">
+      <soap:operation soapAction="http://tempuri.org/PaymentBankTransfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment_KBank">
+      <soap:operation soapAction="http://tempuri.org/Payment_KBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment_KBank_Not_SSL">
+      <soap:operation soapAction="http://tempuri.org/Payment_KBank_Not_SSL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment_SendInvoice">
+      <soap:operation soapAction="http://tempuri.org/Payment_SendInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PaymentServiceSoap12" type="tns:PaymentServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PaymentCreditCard">
+      <soap12:operation soapAction="http://tempuri.org/PaymentCreditCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentCreditCard_Kung">
+      <soap12:operation soapAction="http://tempuri.org/PaymentCreditCard_Kung" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentPayPal">
+      <soap12:operation soapAction="http://tempuri.org/PaymentPayPal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentCounterService">
+      <soap12:operation soapAction="http://tempuri.org/PaymentCounterService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentBankTransfer">
+      <soap12:operation soapAction="http://tempuri.org/PaymentBankTransfer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment_KBank">
+      <soap12:operation soapAction="http://tempuri.org/Payment_KBank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment_KBank_Not_SSL">
+      <soap12:operation soapAction="http://tempuri.org/Payment_KBank_Not_SSL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment_SendInvoice">
+      <soap12:operation soapAction="http://tempuri.org/Payment_SendInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PaymentService">
+    <wsdl:port name="PaymentServiceSoap" binding="tns:PaymentServiceSoap">
+      <soap:address location="https://www.asiabooks.com/ws_payment/PaymentService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PaymentServiceSoap12" binding="tns:PaymentServiceSoap12">
+      <soap12:address location="https://www.asiabooks.com/ws_payment/PaymentService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

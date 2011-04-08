@@ -1,0 +1,235 @@
+﻿ol.bookab
+{
+	margin:0;
+	padding:0;
+	width:auto;
+	background:white;
+}
+
+ol.table-style li
+{
+	display: inline-block;
+	width: 130px;
+	min-height: 300px;
+	vertical-align:top;
+	margin:0;
+	padding-top:10px;
+	padding-bottom:25px;
+	padding-left:10px;
+	padding-right:45px;
+	display: -moz-inline-stack;
+	zoom: 1;
+	*display: inline;
+
+}
+
+ol.table-style li span.width-fixer
+{
+	display: block;
+	width:130px;
+	padding:0px;
+}
+
+ol.table-style img.add-to-cart-button
+{
+	display:block;
+	margin:0;
+} 
+
+/* Class ชื่อหนังสือ */
+ol.table-style li .book-title
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#008000;
+	display:block;
+	height:40px;
+} 
+
+/* Class ชื่อผู้แต่ง */
+ol.table-style li .book-author
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ช่องว่าง */
+ol.table-style li .book-space
+{
+	font-family:Arial;
+	font-size:8pt;
+	display:block;
+	height:10px;
+}
+
+/* Class ราคา Your Price */
+ol.table-style li .book-yourprice
+{
+	font-family:Arial;
+	font-size:9pt;
+	font-weight:bold;
+	color:#006600;
+	display:block;
+	height:15px;
+}
+/* Class ราคา Save */
+ol.table-style li .book-save
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ราคาบาท */
+ol.table-style li .book-priceBaht
+{
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ราคาUSD */
+ol.table-style li .book-priceUSD
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#FF8000;
+	display:block;
+	height:15px;
+}
+/* Class image customer view */
+ol.table-style li .book-imagestar
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#FF8000;
+	display:block;
+	height:15px;
+}
+
+
+/*.....................................*/
+
+ol.bookab_detail
+{
+	margin:0;
+	padding:0;
+	width:auto;
+	background:white;
+}
+
+ol.table-style_detail li
+{
+	display: inline-block;
+	width: 200px;
+	min-height: 300px;
+	vertical-align:top;
+	margin:0;
+	padding-top:10px;
+	padding-bottom:25px;
+	padding-left:10px;
+	padding-right:45px;
+	display: -moz-inline-stack;
+	zoom: 1;
+	*display: inline;
+}
+
+ol.table-style_detail li span.width-fixer
+{
+	display:block;
+	width:200px;
+	padding:0px;
+}
+
+ol.table-style_detail img.add-to-cart-button
+{
+	display:block;
+	margin:0;
+} 
+
+/* Class ชื่อหนังสือ */
+ol.table-style_detail li .book-title
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#008000;
+	display:block;
+	height:30px;
+} 
+
+/* Class ชื่อผู้แต่ง */
+ol.table-style_detail li .book-author
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ช่องว่าง */
+ol.table-style_detail li .book-space
+{
+	font-family:Arial;
+	font-size:8pt;
+	display:block;
+	height:10px;
+}
+
+/* Class ราคา Your Price */
+ol.table-style_detail li .book-yourprice
+{
+	font-family:Arial;
+	font-size:9pt;
+	font-weight:bold;
+	color:#006600;
+	display:block;
+	height:15px;
+}
+/* Class ราคา Save */
+ol.table-style_detail li .book-save
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ราคาบาท */
+ol.table-style_detail li .book-priceBaht
+{
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#696969;
+	display:block;
+	height:15px;
+}
+
+/* Class ราคาUSD */
+ol.table-style_detail li .book-priceUSD
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#FF8000;
+	display:block;
+	height:15px;
+}
+/* Class image customer view */
+ol.table-style li .book-imagestar
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:#FF8000;
+	display:block;
+	height:15px;
+}

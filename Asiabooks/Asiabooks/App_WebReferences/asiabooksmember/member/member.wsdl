@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="case_Search" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="case_Search" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pws" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMemberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stNew" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Internet" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostMemberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionHeader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MemberCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionHeaderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionDeail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MemberCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DocNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionDeailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionDeailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Keyword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileMemberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileMemberByCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemberCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileMemberByCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileMemberByCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProfileMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemberCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProfileMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateProfileMemberResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPassword" />
+  </wsdl:message>
+  <wsdl:message name="GetPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMember" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:PostMember" />
+  </wsdl:message>
+  <wsdl:message name="PostMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:PostMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionHeaderSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactionHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionHeaderSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionDeailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactionDeail" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionDeailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionDeailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfileMember" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileMemberByCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfileMemberByCode" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileMemberByCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileMemberByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProfileMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateProfileMember" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProfileMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateProfileMemberResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MemberSoap">
+    <wsdl:operation name="GetPassword">
+      <wsdl:input message="tns:GetPasswordSoapIn" />
+      <wsdl:output message="tns:GetPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMember">
+      <wsdl:input message="tns:GetMemberSoapIn" />
+      <wsdl:output message="tns:GetMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostMember">
+      <wsdl:input message="tns:PostMemberSoapIn" />
+      <wsdl:output message="tns:PostMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionHeader">
+      <wsdl:input message="tns:GetTransactionHeaderSoapIn" />
+      <wsdl:output message="tns:GetTransactionHeaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionDeail">
+      <wsdl:input message="tns:GetTransactionDeailSoapIn" />
+      <wsdl:output message="tns:GetTransactionDeailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileMember">
+      <wsdl:input message="tns:GetProfileMemberSoapIn" />
+      <wsdl:output message="tns:GetProfileMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileMemberByCode">
+      <wsdl:input message="tns:GetProfileMemberByCodeSoapIn" />
+      <wsdl:output message="tns:GetProfileMemberByCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfileMember">
+      <wsdl:input message="tns:UpdateProfileMemberSoapIn" />
+      <wsdl:output message="tns:UpdateProfileMemberSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MemberSoap" type="tns:MemberSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPassword">
+      <soap:operation soapAction="http://tempuri.org/GetPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMember">
+      <soap:operation soapAction="http://tempuri.org/GetMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostMember">
+      <soap:operation soapAction="http://tempuri.org/PostMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionHeader">
+      <soap:operation soapAction="http://tempuri.org/GetTransactionHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionDeail">
+      <soap:operation soapAction="http://tempuri.org/GetTransactionDeail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileMember">
+      <soap:operation soapAction="http://tempuri.org/GetProfileMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileMemberByCode">
+      <soap:operation soapAction="http://tempuri.org/GetProfileMemberByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfileMember">
+      <soap:operation soapAction="http://tempuri.org/UpdateProfileMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MemberSoap12" type="tns:MemberSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPassword">
+      <soap12:operation soapAction="http://tempuri.org/GetPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMember">
+      <soap12:operation soapAction="http://tempuri.org/GetMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostMember">
+      <soap12:operation soapAction="http://tempuri.org/PostMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionHeader">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactionHeader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionDeail">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactionDeail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileMember">
+      <soap12:operation soapAction="http://tempuri.org/GetProfileMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileMemberByCode">
+      <soap12:operation soapAction="http://tempuri.org/GetProfileMemberByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfileMember">
+      <soap12:operation soapAction="http://tempuri.org/UpdateProfileMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Member">
+    <wsdl:port name="MemberSoap" binding="tns:MemberSoap">
+      <soap:address location="http://ddc.asiabooks.com/wsmember_test/member.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MemberSoap12" binding="tns:MemberSoap12">
+      <soap12:address location="http://ddc.asiabooks.com/wsmember_test/member.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

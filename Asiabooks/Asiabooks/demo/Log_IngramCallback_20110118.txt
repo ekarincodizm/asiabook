@@ -1,0 +1,9 @@
+18/01/2011 04:11:58; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo ; MemberNo ; Amount ; TanksURL ; Description vendorid=,orderno=,instanceid=,status=;
+18/01/2011 06:34:03; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 10120100001211; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=10120100001211,instanceid=,status=8;
+18/01/2011 07:03:12; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 10120100001211; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=10120100001211,instanceid=,status=8;
+18/01/2011 07:09:04; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 10120100001211; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=10120100001211,instanceid=,status=8;
+18/01/2011 07:17:03; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 10120100001211; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=10120100001211,instanceid=,status=8;
+18/01/2011 07:49:33; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 1101140000441; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=1101140000441,instanceid=,status=1;
+18/01/2011 07:49:33; CallFunation IngramCallbackStatus_LogDownload; CallServiceURL ; IPAddress ; DocumrntNo 11011400004; MemberNo ; Amount ; TanksURL ; Description SqlDb:Execute(string):Invalid object name 'ebook_download_log'.;
+18/01/2011 07:51:21; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 1101140000441; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=1101140000441,instanceid=,status=1;
+18/01/2011 07:51:21; CallFunation IngramCallbackStatus_LogDownload; CallServiceURL ; IPAddress ; DocumrntNo 11011400004; MemberNo ; Amount ; TanksURL ; Description SqlDb:Execute(string):Invalid object name 'ebook_download_log'.;

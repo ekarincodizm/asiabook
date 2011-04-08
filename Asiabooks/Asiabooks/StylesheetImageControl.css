@@ -1,0 +1,25 @@
+﻿body 
+{
+}
+
+.tdLeft
+{
+	width: 30%;
+	height:24px;
+	font-size:11px;
+	font-family:Verdana;
+}
+.tdCenter
+{
+	width: 60%;
+	height: 24px;
+	font-size: 11px;
+	font-family: Verdana;  
+}
+.tdRight
+{  
+	width: 10%;
+	height: 24px;
+	font-size: 11px; 
+	font-family: Verdana;
+}	

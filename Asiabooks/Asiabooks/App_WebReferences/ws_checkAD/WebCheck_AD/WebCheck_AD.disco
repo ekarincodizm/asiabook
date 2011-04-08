@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://ddc.asiabooks.com/_ws_Check_AD/WebCheck_AD.asmx?wsdl" docRef="http://ddc.asiabooks.com/_ws_Check_AD/WebCheck_AD.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://ddc.asiabooks.com/_ws_Check_AD/WebCheck_AD.asmx" xmlns:q1="http://tempuri.org/" binding="q1:WebCheck_ADSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://ddc.asiabooks.com/_ws_Check_AD/WebCheck_AD.asmx" xmlns:q2="http://tempuri.org/" binding="q2:WebCheck_ADSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

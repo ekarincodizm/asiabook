@@ -1,0 +1,66 @@
+.flexdropdownmenu, .flexdropdownmenu ul{ /*topmost and sub ULs, respectively*/
+font-family:Arial;
+font-size:9pt;
+margin: 0;
+padding: 0;
+left: 0;
+top: 0;
+display:inline-block;
+list-style-type: none;
+position:absolute;
+border-radius: 7px;
+border: 1px solid black;
+visibility: hidden;
+border-bottom-width: 1;
+box-shadow: 3px 3px 8px #818181; /*shadow for CSS3 capable browsers.*/
+-webkit-box-shadow: 3px 3px 8px #818181;
+-moz-box-shadow: 3px 3px 8px #818181;
+background-color:#eeeeee;
+filter:alpha(opacity=80);
+opacity:0.7;
+}
+/*background: white;
+
+
+
+}
+
+/**/
+.flexdropdownmenu li{
+position: relative;
+padding: 0;
+top: 0;
+}
+
+.flexdropdownmenu li a{
+display: block;
+width: 170px; /*width of menu (not including side paddings)*/
+color: black;
+top: 0;
+
+/*background: #fae7a9;
+border-bottom: 1px solid black;*/
+text-decoration: none;
+padding: 2px 3px;
+}
+
+* html .flexdropdownmenu li{ /*IE6 CSS hack*/
+display: inline-block;
+padding: 0;
+top: 0;
+width: 180px; /*width of menu (include side paddings of LI A*/
+}
+
+.flexdropdownmenu li a:hover, .flexdropdownmenu li.selected>a{
+background: #999999;
+top: 0;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 0px;
+right: 5px;
+}
+
+/* CSS Document */
+

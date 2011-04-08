@@ -1,0 +1,8 @@
+08/02/2011 10:53:29; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo thisisfortesttttt1; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=thisisfortesttttt1,instanceid=,status=1;
+08/02/2011 11:23:28; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo thisisfortesttttt1; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=thisisfortesttttt1,instanceid=,status=5;
+08/02/2011 11:23:29; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo thisisfortesttttt1; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=thisisfortesttttt1,instanceid=,status=5;
+08/02/2011 11:23:31; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo thisisfortesttttt1; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=thisisfortesttttt1,instanceid=,status=5;
+08/02/2011 11:23:32; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo thisisfortesttttt1; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=thisisfortesttttt1,instanceid=,status=5;
+08/02/2011 11:23:34; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo thisisfortesttttt1; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=thisisfortesttttt1,instanceid=,status=5;
+08/02/2011 11:33:28; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo thisisfortesttttt1; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=thisisfortesttttt1,instanceid=,status=5;
+08/02/2011 11:33:29; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo thisisfortesttttt6; MemberNo ; Amount ; TanksURL ; Description vendorid=236,orderno=thisisfortesttttt6,instanceid=,status=1;

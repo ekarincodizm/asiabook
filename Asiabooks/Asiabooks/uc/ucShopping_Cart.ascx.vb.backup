@@ -1,0 +1,54 @@
+﻿Imports System
+Imports System.Data
+Imports Eordering.BusinessLogic
+Partial Class uc_ucShopping_Cart
+    Inherits System.Web.UI.UserControl
+    Dim bd As New Class_book_detail
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Not IsPostBack Then
+            BindData()
+
+        End If
+    End Sub
+    Private Sub BindData()
+        Dim count_qty As Double = 0
+        Dim count_amount As Double = 0
+        Dim count_item_branch As Double = 0
+        Dim count_item_jobber As Double = 0
+
+        If Session("In_Branch") Is Nothing And Session("jobber") Is Nothing Then
+            Panel1.Visible = False
+        Else
+            If Not IsNothing(Session("In_Branch")) Then
+                Dim dt_branch As New DataTable
+                dt_branch = Session("In_Branch")
+                If dt_branch.Rows.Count > 0 Then
+                    For i As Integer = 0 To dt_branch.Rows.Count - 1
+                        count_amount = CDbl(dt_branch.Rows(i).Item("Amount")) + count_amount
+                        count_qty = CDbl(dt_branch.Rows(i).Item("Quantity")) + count_qty
+                    Next
+                    count_item_branch = dt_branch.Rows.Count.ToString
+                End If
+            End If
+
+            If Not IsNothing(Session("jobber")) Then
+                Dim dt_jobber As New DataTable
+                dt_jobber = Session("jobber")
+                If dt_jobber.Rows.Count > 0 Then
+                    For i As Integer = 0 To dt_jobber.Rows.Count - 1
+                        count_amount = CDbl(dt_jobber.Rows(i).Item("Amount")) + count_amount
+                        count_qty = CDbl(dt_jobber.Rows(i).Item("Quantity")) + count_qty
+                    Next
+                    count_item_jobber = dt_jobber.Rows.Count
+                End If
+            End If
+            lbl_amount.Text = count_amount.ToString("#,###,##0.00")
+            lbl_item.Text = CDbl(count_item_branch.ToString) + CDbl(count_item_jobber.ToString)
+            lbl_qty.Text = count_qty.ToString
+            lbl_Price_US.Text = "(US$ " + bd.callUsd((lbl_amount.Text)) + ")"
+        End If
+
+
+    End Sub
+End Class

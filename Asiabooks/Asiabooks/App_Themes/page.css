@@ -1,0 +1,265 @@
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}
+.page 
+{  
+	font-family: "arial","MS Sans Serif", "Microsoft Sans Serif"; 
+	font-size: 11px; 
+	color: #333333;
+}
+
+.menu 
+{
+	font-family: "arial","MS Sans Serif", "Microsoft Sans Serif"; 
+	font-size: 11px; 
+	color: #555555;
+	text-align:left;
+}
+
+.menuHeader 
+{
+	font-family: "arial","MS Sans Serif", "Microsoft Sans Serif"; 
+	font-size: 11px; 
+	color: #555555;
+	font-weight:bold;
+	text-align:left;
+}
+
+.menuHeaderGreen 
+{
+	font-family: "arial","MS Sans Serif", "Microsoft Sans Serif"; 
+	font-size: 11px; 
+	color: #086b28;
+	font-weight:bold;
+	text-align:left;
+}
+
+td.font_MenuHeadWhite
+{
+	font-family: "arial","MS Sans Serif", "Microsoft Sans Serif"; 
+	font-size: 12px; 
+	font-weight:bold;
+	color:White;
+	text-align: left ;
+	height : 30px;
+}
+
+td.font_MenuHead
+{
+	font-family: "arial","MS Sans Serif", "Microsoft Sans Serif"; 
+	font-size: 12px; 
+	font-weight:bold;
+	color: #086b28;
+	text-align: left ;
+	height : 30px;
+}
+
+.font_gray_11
+{
+	font-family: "arial","MS Sans Serif", "Microsoft Sans Serif";
+	color : #4e4e4e;
+	text-decoration: none;
+}
+
+.font_yellow_11_bold
+{
+   font : bold 11px arial;
+   color : #FF9900;
+   border-style:none;
+}
+.font_gray_11
+{
+	font : bold 11px arial;
+	color : #4e4e4e;
+	text-decoration: none;
+}
+.font_gray_11_normal
+{
+	font : normal 11px arial;
+	color : #4e4e4e;
+	text-decoration: none;
+}
+
+.font_green_11
+{
+	font : bold 11px arial;
+	color : #55880f;
+	padding-left: 5px;
+	margin-left:5px;
+}
+
+.font_green
+{
+	font : 11px arial;
+	color : #55880f;
+}
+
+.font_green
+{
+	font : 11px arial;
+	color : #55880f;
+}
+
+.textRed 
+{
+	font-family: "arial","MS Sans Serif", "Microsoft Sans Serif"; 
+	font-size: 11px; 
+	color: Red;
+}
+
+.Grid_bookItem_A,a:link.Grid_bookItem_A,a:visited.Grid_bookItem_A,a:active.Grid_bookItem_A
+{
+   font-weight:bold;
+   color : #0589D4;
+   text-decoration: none;
+
+}
+ a:hover.Grid_bookItem_A {
+	font-weight:bold;
+	color : #00CCFF;
+	text-decoration: none;
+} 
+
+a:link { color: #666666; text-decoration: none}
+a:visited { color: #666666; text-decoration: none}
+a:active { color: #CC6600; text-decoration: underline}
+a:hover { color: #990000; text-decoration: underline}
+
+a.lineU:link { color: #990000; text-decoration: none}
+a.lineU:visited { color: #990000; text-decoration: none}
+a.lineU:active { color: #FF9900; text-decoration: none}
+a.lineU:hover { color: #FF9900; text-decoration: none}
+
+a.Green:link {color: #006633; text-decoration: none}
+a.Green:visited { color: #006633; text-decoration: none}
+a.Green:active { color: #003333; text-decoration: none}
+a.Green:hover { color: #003333; text-decoration: none}
+
+a.GreenBold:link { font-weight:bold; color: #006633; text-decoration: none}
+a.GreenBold:visited { font-weight:bold; color: #006633; text-decoration: none}
+a.GreenBold:active { font-weight:bold; color: #003333; text-decoration: none}
+a.GreenBold:hover { font-weight:bold; color: #003333; text-decoration: none}
+
+a.NewRelease:link { font-weight:bold; color: Green;  text-decoration: none}
+a.NewRelease:visited { font-weight:bold; color: Green;  text-decoration: none}
+a.NewRelease:active { font-weight:bold; color: Green;  text-decoration: none}
+a.NewRelease:hover { font-weight:bold; color: Green;  text-decoration: none}
+
+a.MoreDetail:link { font-weight:bold; color: #555555; text-decoration: none;}
+a.MoreDetail:visited { font-weight:bold; color: #555555; text-decoration: none;}
+a.MoreDetail:active { font-weight:bold; color: #ee8100; text-decoration: none;}
+a.MoreDetail:hover { font-weight:bold; color: #ee8100; text-decoration: none;}
+
+
+/* Datagrid shopping */
+.Grid_shopping
+{
+	border: solid 2px #047700;
+	width:100%;
+	border-top-style :none;
+}
+.Grid_shoppingHeader
+{
+	background-color: #49A514;
+	font: bold 11px Verdana;
+	color: White;
+	text-align: center;
+	height: 28px;
+}
+.Grid_shoppingItem
+{
+   border-style : none;
+   font : bold 11px Verdana;
+   color : #4E4E4E;
+   vertical-align : middle;
+   padding-left: 2px;
+   padding-right:2px;
+   height:28px;
+   border-color:#047700;
+   background-color: #FFFFFF;
+
+}
+.Grid_shoppingItem td,.Grid_shoppingAltItem td,.Grid_shoppingHeader td
+{
+	border: solid 2px #047700;
+}
+.Grid_shoppingAltItem
+{
+   background-color: #F2FDEC;
+   border-style : none;
+   font : bold 11px Verdana;
+   color : #4E4E4E;
+   padding-left: 2px;
+   padding-right:2px;
+   vertical-align : middle;
+   height:28px;
+   
+}
+/* table */
+.table_cart_green
+{
+	font : bold 11px Verdana;
+	color : #55880f;
+	padding-left: 10px;
+	text-decoration: none;
+	border: solid 2px #047700;
+	background-color:#e0fbd2;
+	height : 40px;
+
+}
+.table_shoppingHeader
+{
+	background-color: #49A514;
+	font: bold 11px Verdana;
+	color: White;
+	border: solid 1px #047700;
+	height : 20px;
+}
+/* Datagrid inq */
+.Grid_inq
+{
+	border: solid 2px #047700;
+	width:795px;
+}
+.Grid_inqHeader
+{
+	background-color: #49A514;
+	font: bold 11px Verdana;
+	color: White;
+	text-align: center;
+	height: 28px;
+}
+.Grid_inqItem
+{
+   border-style : none;
+   font : normal 11px Verdana;
+   color : #4E4E4E;
+   padding-left: 10px;
+   height:28px;
+   border-color:#047700;
+}
+.Grid_inqItem td,.Grid_inqAltItem td,.Grid_inqHeader td
+{
+	border: solid 1px #047700;
+}
+.Grid_inqAltItem
+{
+   background-color: #F2FDEC;
+   border-style : none;
+   font : normal 11px Verdana;
+   color : #4E4E4E;
+   padding-left: 10px;
+   height:28px;
+}
+.Grid_inqPager
+{
+	background-image: url(images/bg-page.jpg);
+	text-align : right ;
+	margin-right : 50px;
+	
+}

@@ -1,0 +1,2440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<dsMagazine>
+  <Magazine>
+    <OrderNo>1</OrderNo>
+    <isbn_13>MAG9990003</isbn_13>
+    <book_title>NATIONAL GEOGRAPHIC (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.03.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>3300.00</list_price>
+    <your_price>2640.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>2</OrderNo>
+    <isbn_13>MAG9990013</isbn_13>
+    <book_title>ELLE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.13.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5940.00</list_price>
+    <your_price>4752.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>3</OrderNo>
+    <isbn_13>MAG9990023</isbn_13>
+    <book_title>ARCHITECTURAL DIGEST (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.23.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>5940.00</list_price>
+    <your_price>4752.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>4</OrderNo>
+    <isbn_13>MAG9990033</isbn_13>
+    <book_title>NEW WEEKLY (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.33.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>13260.00</list_price>
+    <your_price>10608.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>5</OrderNo>
+    <isbn_13>MAG9990043</isbn_13>
+    <book_title>STUFF (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.43.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>5940.00</list_price>
+    <your_price>4752.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>6</OrderNo>
+    <isbn_13>MAG9990053</isbn_13>
+    <book_title>VOGUE PARIS (FRA)</book_title>
+    <author>FRA</author>
+    <publisher_name>10 issue/Per Year</publisher_name>
+    <image>No.53.JPG</image>
+    <Publication_Date>10 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>6950.00</list_price>
+    <your_price>5560.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>7</OrderNo>
+    <isbn_13>MAG9990063</isbn_13>
+    <book_title>DIGITAL SLR PHOTOGRAPHY (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.63.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>4620.00</list_price>
+    <your_price>3696.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>8</OrderNo>
+    <isbn_13>MAG9990073</isbn_13>
+    <book_title>DELICIOUS (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>11 issue/Per Year</publisher_name>
+    <image>No.73.JPG</image>
+    <Publication_Date>11 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>3795.00</list_price>
+    <your_price>3036.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>9</OrderNo>
+    <isbn_13>MAG9990083</isbn_13>
+    <book_title>FUN TO LEARN FAVOURITES (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>26 issue/Per Year</publisher_name>
+    <image>No.83.JPG</image>
+    <Publication_Date>26 issue/Per Year</Publication_Date>
+    <Cat_Code>MCT00</Cat_Code>
+    <Cat_Description>CHILDREN &amp; TEENAGE</Cat_Description>
+    <list_price>6370.00</list_price>
+    <your_price>5096.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>10</OrderNo>
+    <isbn_13>MAG9990093</isbn_13>
+    <book_title>TRAVEL &amp; LEISURE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.93.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MLI00</Cat_Code>
+    <Cat_Description>LEISURE INTEREST</Cat_Description>
+    <list_price>5220.00</list_price>
+    <your_price>4176.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>11</OrderNo>
+    <isbn_13>MAG9990103</isbn_13>
+    <book_title>MUSCLE &amp; FITNESS (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.103.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>5700.00</list_price>
+    <your_price>4560.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>12</OrderNo>
+    <isbn_13>MAG9990113</isbn_13>
+    <book_title>MUSCLE MAG INTERNATIONAL (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.113.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>13</OrderNo>
+    <isbn_13>MAG9990123</isbn_13>
+    <book_title>SEVENTEEN (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.123.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MCT00</Cat_Code>
+    <Cat_Description>CHILDREN &amp; TEENAGE</Cat_Description>
+    <list_price>3900.00</list_price>
+    <your_price>3120.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>14</OrderNo>
+    <isbn_13>MAG9990133</isbn_13>
+    <book_title>DISCOVER (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.133.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>3900.00</list_price>
+    <your_price>3120.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>15</OrderNo>
+    <isbn_13>MAG9990143</isbn_13>
+    <book_title>DELL SUDOKU EASY (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issues/Per Year</publisher_name>
+    <image>No.143.JPG</image>
+    <Publication_Date>12 issues/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>1980.00</list_price>
+    <your_price>1584.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>16</OrderNo>
+    <isbn_13>MAG9990153</isbn_13>
+    <book_title>WOMEN’S HEALTH (10PA-US)  (US)</book_title>
+    <author>US</author>
+    <publisher_name>10/issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>10/issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>3300.00</list_price>
+    <your_price>2640.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>17</OrderNo>
+    <isbn_13>MAG9990163</isbn_13>
+    <book_title>Women’s Fitness (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>18</OrderNo>
+    <isbn_13>MAG9990173</isbn_13>
+    <book_title>HOME &amp; APERTMENT TRENDS (Q-AUST) (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>4 issue/Per Year</publisher_name>
+    <image>No.173.jpg</image>
+    <Publication_Date>4 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>1980.00</list_price>
+    <your_price>1584.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>19</OrderNo>
+    <isbn_13>MAG9990004</isbn_13>
+    <book_title>PEOPLE WEEKLY (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.04.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>16900.00</list_price>
+    <your_price>13520.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>20</OrderNo>
+    <isbn_13>MAG9990014</isbn_13>
+    <book_title>STAR (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.14.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>13780.00</list_price>
+    <your_price>11024.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>21</OrderNo>
+    <isbn_13>MAG9990024</isbn_13>
+    <book_title>MARIE CLAIRE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.24.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4620.00</list_price>
+    <your_price>3696.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>22</OrderNo>
+    <isbn_13>MAG9990034</isbn_13>
+    <book_title>YAZHOU ZHOUKAN (SG)</book_title>
+    <author>SG</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.34.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>7020.00</list_price>
+    <your_price>5616.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>23</OrderNo>
+    <isbn_13>MAG9990044</isbn_13>
+    <book_title>VOGUE COLLECTIONS (FRA)</book_title>
+    <author>FRA</author>
+    <publisher_name>2 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>2 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>4070.00</list_price>
+    <your_price>3256.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>24</OrderNo>
+    <isbn_13>MAG9990054</isbn_13>
+    <book_title>VOGUE GIOIELLO (ITA)</book_title>
+    <author>ITA</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>No.54.JPG</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>4770.00</list_price>
+    <your_price>3816.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>25</OrderNo>
+    <isbn_13>MAG9990064</isbn_13>
+    <book_title>ELLE D?COR (ITA)</book_title>
+    <author>ITA</author>
+    <publisher_name>10 issue/Per Year</publisher_name>
+    <image>No.64.JPG</image>
+    <Publication_Date>10 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>4350.00</list_price>
+    <your_price>3480.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>26</OrderNo>
+    <isbn_13>MAG9990074</isbn_13>
+    <book_title>READER'S DIGEST (ENG) (ASIA)</book_title>
+    <author>ASIA</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.74.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>1320.00</list_price>
+    <your_price>1056.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>27</OrderNo>
+    <isbn_13>MAG9990084</isbn_13>
+    <book_title>INTERNATIONAL EXPRESS (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.84.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>7800.00</list_price>
+    <your_price>6240.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>28</OrderNo>
+    <isbn_13>MAG9990094</isbn_13>
+    <book_title>I CREATE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issue/Per Year</publisher_name>
+    <image>No.94.JPG</image>
+    <Publication_Date>13 issue/Per Year</Publication_Date>
+    <Cat_Code>MCO00</Cat_Code>
+    <Cat_Description>COMPUTER</Cat_Description>
+    <list_price>6435.00</list_price>
+    <your_price>5148.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>29</OrderNo>
+    <isbn_13>MAG9990104</isbn_13>
+    <book_title>MACWORLD-CD (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.104.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MCO00</Cat_Code>
+    <Cat_Description>COMPUTER</Cat_Description>
+    <list_price>4140.00</list_price>
+    <your_price>3312.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>30</OrderNo>
+    <isbn_13>MAG9990114</isbn_13>
+    <book_title>VOGUE LIVING (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>No.114.JPG</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>2370.00</list_price>
+    <your_price>1896.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>31</OrderNo>
+    <isbn_13>MAG9990124</isbn_13>
+    <book_title>MARK (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>No.124.JPG</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>7770.00</list_price>
+    <your_price>6216.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>32</OrderNo>
+    <isbn_13>MAG9990134</isbn_13>
+    <book_title>FRONT (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.134.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>5340.00</list_price>
+    <your_price>4272.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>33</OrderNo>
+    <isbn_13>MAG9990144</isbn_13>
+    <book_title>STAR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.144.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>12740.00</list_price>
+    <your_price>10192.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>34</OrderNo>
+    <isbn_13>MAG9990154</isbn_13>
+    <book_title>ASIA SPA (ASIA) (ASIA)</book_title>
+    <author>ASIA</author>
+    <publisher_name>6/Issue/Per Year</publisher_name>
+    <image>No.154.JPG</image>
+    <Publication_Date>6/Issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>1200.00</list_price>
+    <your_price>960.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>35</OrderNo>
+    <isbn_13>MAG9990164</isbn_13>
+    <book_title>GENTLEMEN'S QUARTERLY (M-UK) (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.164.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>6540.00</list_price>
+    <your_price>5232.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>36</OrderNo>
+    <isbn_13>MAG9990174</isbn_13>
+    <book_title>WINE SPECTATOR (BW-USA) (US)</book_title>
+    <author>US</author>
+    <publisher_name>26/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>26/Issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>12870.00</list_price>
+    <your_price>10296.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>37</OrderNo>
+    <isbn_13>MAG9990005</isbn_13>
+    <book_title>HELLO! (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.05.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>15340.00</list_price>
+    <your_price>12272.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>38</OrderNo>
+    <isbn_13>MAG9990015</isbn_13>
+    <book_title>COSMOPOLITAN (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.15.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>39</OrderNo>
+    <isbn_13>MAG9990025</isbn_13>
+    <book_title>NUTS (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.25.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>3060.00</list_price>
+    <your_price>2448.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>40</OrderNo>
+    <isbn_13>MAG9990035</isbn_13>
+    <book_title>NOW (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.35.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>11180.00</list_price>
+    <your_price>8944.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>41</OrderNo>
+    <isbn_13>MAG9990055</isbn_13>
+    <book_title>HEAT (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.55.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>14300.00</list_price>
+    <your_price>11440.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>42</OrderNo>
+    <isbn_13>MAG9990065</isbn_13>
+    <book_title>VOGUE ITALIA (ITA)</book_title>
+    <author>ITA</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.65.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>11940.00</list_price>
+    <your_price>9552.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>43</OrderNo>
+    <isbn_13>MAG9990075</isbn_13>
+    <book_title>LOOK (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.75.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>11180.00</list_price>
+    <your_price>8944.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>44</OrderNo>
+    <isbn_13>MAG9990085</isbn_13>
+    <book_title>FAMOUS (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.85.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>11700.00</list_price>
+    <your_price>9360.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>45</OrderNo>
+    <isbn_13>MAG9990095</isbn_13>
+    <book_title>ESQUIRE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.95.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>5940.00</list_price>
+    <your_price>4752.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>46</OrderNo>
+    <isbn_13>MAG9990105</isbn_13>
+    <book_title>FHM (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.105.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>5100.00</list_price>
+    <your_price>4080.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>47</OrderNo>
+    <isbn_13>MAG9990115</isbn_13>
+    <book_title>TRAVEL+LEISURE (ASIA)</book_title>
+    <author>ASIA</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.115.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MLI00</Cat_Code>
+    <Cat_Description>LEISURE INTEREST</Cat_Description>
+    <list_price>2100.00</list_price>
+    <your_price>1680.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>48</OrderNo>
+    <isbn_13>MAG9990125</isbn_13>
+    <book_title>GRAZIA (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.125.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>13780.00</list_price>
+    <your_price>11024.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>49</OrderNo>
+    <isbn_13>MAG9990135</isbn_13>
+    <book_title>NUMERO (FRA)</book_title>
+    <author>FRA</author>
+    <publisher_name>10 issue/Per Year</publisher_name>
+    <image>No.135.JPG</image>
+    <Publication_Date>10 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>4750.00</list_price>
+    <your_price>3800.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>50</OrderNo>
+    <isbn_13>MAG9990145</isbn_13>
+    <book_title>LINUX USER &amp; DEVELOPER (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issue/Per Year</publisher_name>
+    <image>No.145.JPG</image>
+    <Publication_Date>13 issue/Per Year</Publication_Date>
+    <Cat_Code>MCO00</Cat_Code>
+    <Cat_Description>COMPUTER</Cat_Description>
+    <list_price>6435.00</list_price>
+    <your_price>5148.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>51</OrderNo>
+    <isbn_13>MAG9990155</isbn_13>
+    <book_title>Home &amp; Gardens  (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>52</OrderNo>
+    <isbn_13>MAG9990165</isbn_13>
+    <book_title>AMERICAN PHOTO(BM-USA) (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.165.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>3300.00</list_price>
+    <your_price>2640.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>53</OrderNo>
+    <isbn_13>MAG9990175</isbn_13>
+    <book_title>COOKING LIGHT (BM-USA) (US)</book_title>
+    <author>US</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>1650.00</list_price>
+    <your_price>1320.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>54</OrderNo>
+    <isbn_13>MAG9990006</isbn_13>
+    <book_title>OK! (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.06.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>20020.00</list_price>
+    <your_price>16016.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>55</OrderNo>
+    <isbn_13>MAG9990016</isbn_13>
+    <book_title>GOLF DIGEST (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MSP00</Cat_Code>
+    <Cat_Description>SPORTS</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>56</OrderNo>
+    <isbn_13>MAG9990026</isbn_13>
+    <book_title>ELLE DECORATION (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.26.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>6540.00</list_price>
+    <your_price>5232.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>57</OrderNo>
+    <isbn_13>MAG9990036</isbn_13>
+    <book_title>L'OFFICIEL 1000 MODELS (FRA)</book_title>
+    <author>FRA</author>
+    <publisher_name>10 issue/Per Year</publisher_name>
+    <image>No.36.JPG</image>
+    <Publication_Date>10 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>10950.00</list_price>
+    <your_price>8760.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>58</OrderNo>
+    <isbn_13>MAG9990046</isbn_13>
+    <book_title>CONDE NAST TRAVELLER (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.46.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MLI00</Cat_Code>
+    <Cat_Description>LEISURE INTEREST</Cat_Description>
+    <list_price>5940.00</list_price>
+    <your_price>4752.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>59</OrderNo>
+    <isbn_13>MAG9990056</isbn_13>
+    <book_title>NATIONAL ENQUIRER (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.56.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>10140.00</list_price>
+    <your_price>8112.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>60</OrderNo>
+    <isbn_13>MAG9990066</isbn_13>
+    <book_title>WOMAN'S DAY (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.66.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>11180.00</list_price>
+    <your_price>8944.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>61</OrderNo>
+    <isbn_13>MAG9990076</isbn_13>
+    <book_title>WIRED (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.76.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>62</OrderNo>
+    <isbn_13>MAG9990086</isbn_13>
+    <book_title>AIRLINER WORLD (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.86.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>4980.00</list_price>
+    <your_price>3984.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>63</OrderNo>
+    <isbn_13>MAG9990096</isbn_13>
+    <book_title>FHM INTERNATIONAL (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.96.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>64</OrderNo>
+    <isbn_13>MAG9990106</isbn_13>
+    <book_title>FAST BIKES (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issue/Per Year</publisher_name>
+    <image>No.106.JPG</image>
+    <Publication_Date>13 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>5655.00</list_price>
+    <your_price>4524.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>65</OrderNo>
+    <isbn_13>MAG9990116</isbn_13>
+    <book_title>TEEN VOGUE (US)</book_title>
+    <author>US</author>
+    <publisher_name>10 issue/Per Year</publisher_name>
+    <image>No.116.JPG</image>
+    <Publication_Date>10 issue/Per Year</Publication_Date>
+    <Cat_Code>MCT00</Cat_Code>
+    <Cat_Description>CHILDREN &amp; TEENAGE</Cat_Description>
+    <list_price>2450.00</list_price>
+    <your_price>1960.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>66</OrderNo>
+    <isbn_13>MAG9990126</isbn_13>
+    <book_title>ESQUIRE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.126.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>5340.00</list_price>
+    <your_price>4272.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>67</OrderNo>
+    <isbn_13>MAG9990136</isbn_13>
+    <book_title>RED (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.136.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4140.00</list_price>
+    <your_price>3312.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>68</OrderNo>
+    <isbn_13>MAG9990146</isbn_13>
+    <book_title>MACWORLD (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issues/Per Year</publisher_name>
+    <image>No.146.JPG</image>
+    <Publication_Date>12 issues/Per Year</Publication_Date>
+    <Cat_Code>MCO00</Cat_Code>
+    <Cat_Description>COMPUTER</Cat_Description>
+    <list_price>6900.00</list_price>
+    <your_price>5520.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>69</OrderNo>
+    <isbn_13>MAG9990156</isbn_13>
+    <book_title>Country Home Ideas  (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>70</OrderNo>
+    <isbn_13>MAG9990166</isbn_13>
+    <book_title>COLORS (3PA-ITALY)  (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.166.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>71</OrderNo>
+    <isbn_13>MAG9990176</isbn_13>
+    <book_title>in ('ebook','Free eBook') (US)</book_title>
+    <author>US</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MMU00</Cat_Code>
+    <Cat_Description>MUSIC &amp; ENTERTAINMENT</Cat_Description>
+    <list_price>3300.00</list_price>
+    <your_price>2640.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>72</OrderNo>
+    <isbn_13>MAG9990007</isbn_13>
+    <book_title>VANITY FAIR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.07.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5220.00</list_price>
+    <your_price>4176.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>73</OrderNo>
+    <isbn_13>MAG9990010</isbn_13>
+    <book_title>US WEEKLY (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.10.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>14300.00</list_price>
+    <your_price>11440.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>74</OrderNo>
+    <isbn_13>MAG9990017</isbn_13>
+    <book_title>MARIE CLAIRE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.17.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4380.00</list_price>
+    <your_price>3504.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>75</OrderNo>
+    <isbn_13>MAG9990020</isbn_13>
+    <book_title>GENTLEMEN'S QUARTERLY (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.20.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>6540.00</list_price>
+    <your_price>5232.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>76</OrderNo>
+    <isbn_13>MAG9990027</isbn_13>
+    <book_title>BBC TOPGEAR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.27.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>5940.00</list_price>
+    <your_price>4752.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>77</OrderNo>
+    <isbn_13>MAG9990030</isbn_13>
+    <book_title>OK! (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.30.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>13260.00</list_price>
+    <your_price>10608.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>78</OrderNo>
+    <isbn_13>MAG9990037</isbn_13>
+    <book_title>HARPER'S BAZAAR  (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.37.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4620.00</list_price>
+    <your_price>3696.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>79</OrderNo>
+    <isbn_13>MAG9990040</isbn_13>
+    <book_title>ZOO WEEKLY (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.40.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>10140.00</list_price>
+    <your_price>8112.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>80</OrderNo>
+    <isbn_13>MAG9990047</isbn_13>
+    <book_title>WIRED (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.47.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MCO00</Cat_Code>
+    <Cat_Description>COMPUTER</Cat_Description>
+    <list_price>4620.00</list_price>
+    <your_price>3696.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>81</OrderNo>
+    <isbn_13>MAG9990050</isbn_13>
+    <book_title>MEN'S HEALTH (US)</book_title>
+    <author>US</author>
+    <publisher_name>11 issue/Per Year</publisher_name>
+    <image>No.50.JPG</image>
+    <Publication_Date>11 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>4125.00</list_price>
+    <your_price>3300.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>82</OrderNo>
+    <isbn_13>MAG9990057</isbn_13>
+    <book_title>POPULAR SCIENCE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.57.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>83</OrderNo>
+    <isbn_13>MAG9990060</isbn_13>
+    <book_title>CLOSER (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.60.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>9100.00</list_price>
+    <your_price>7280.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>84</OrderNo>
+    <isbn_13>MAG9990067</isbn_13>
+    <book_title>SOLITAIRE (SG)</book_title>
+    <author>SG</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>No.67.JPG</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>1500.00</list_price>
+    <your_price>1200.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>85</OrderNo>
+    <isbn_13>MAG9990070</isbn_13>
+    <book_title>TELEGRAPH WORLD WIDE EDITION (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.70.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>9620.00</list_price>
+    <your_price>7696.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>86</OrderNo>
+    <isbn_13>MAG9990077</isbn_13>
+    <book_title>ATTITUDE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.77.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>87</OrderNo>
+    <isbn_13>MAG9990080</isbn_13>
+    <book_title>NEW SCIENTIST (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.80.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>19500.00</list_price>
+    <your_price>15600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>88</OrderNo>
+    <isbn_13>MAG9990087</isbn_13>
+    <book_title>LOADED (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.87.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>89</OrderNo>
+    <isbn_13>MAG9990090</isbn_13>
+    <book_title>THE SPECTATOR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.90.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>11440.00</list_price>
+    <your_price>9152.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>90</OrderNo>
+    <isbn_13>MAG9990097</isbn_13>
+    <book_title>HOUSE &amp; GARDEN (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.97.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>4620.00</list_price>
+    <your_price>3696.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>91</OrderNo>
+    <isbn_13>MAG9990100</isbn_13>
+    <book_title>MAXIM (M-USA)-A (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.100.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>5100.00</list_price>
+    <your_price>4080.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>92</OrderNo>
+    <isbn_13>MAG9990107</isbn_13>
+    <book_title>FOREIGN AFFAIRS (US)</book_title>
+    <author>US</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>No.107.JPG</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>3750.00</list_price>
+    <your_price>3000.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>93</OrderNo>
+    <isbn_13>MAG9990110</isbn_13>
+    <book_title>Q MAGAZINE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.110.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMU00</Cat_Code>
+    <Cat_Description>MUSIC &amp; ENTERTAINMENT</Cat_Description>
+    <list_price>5700.00</list_price>
+    <your_price>4560.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>94</OrderNo>
+    <isbn_13>MAG9990117</isbn_13>
+    <book_title>BELLE (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>No.117.JPG</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>2850.00</list_price>
+    <your_price>2280.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>95</OrderNo>
+    <isbn_13>MAG9990120</isbn_13>
+    <book_title>NYLON MAGAZINE (US)</book_title>
+    <author>US</author>
+    <publisher_name>10 issue/Per Year</publisher_name>
+    <image>No.120.JPG</image>
+    <Publication_Date>10 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>3850.00</list_price>
+    <your_price>3080.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>96</OrderNo>
+    <isbn_13>MAG9990127</isbn_13>
+    <book_title>IN STYLE (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5220.00</list_price>
+    <your_price>4176.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>97</OrderNo>
+    <isbn_13>MAG9990130</isbn_13>
+    <book_title>DIGITAL PHOTOGRAPHER (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.130.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>7500.00</list_price>
+    <your_price>6000.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>98</OrderNo>
+    <isbn_13>MAG9990137</isbn_13>
+    <book_title>MATCH WEEKLY (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.137.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MSP00</Cat_Code>
+    <Cat_Description>SPORTS</Cat_Description>
+    <list_price>10140.00</list_price>
+    <your_price>8112.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>99</OrderNo>
+    <isbn_13>MAG9990140</isbn_13>
+    <book_title>ARCHITECTURAL RECORD (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.140.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>6900.00</list_price>
+    <your_price>5520.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>100</OrderNo>
+    <isbn_13>MAG9990147</isbn_13>
+    <book_title>25 BEAUTIFUL HOMES (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>10 issues/Per Year</publisher_name>
+    <image>No.147.JPG</image>
+    <Publication_Date>10 issues/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>3250.00</list_price>
+    <your_price>2600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>101</OrderNo>
+    <isbn_13>MAG9990150</isbn_13>
+    <book_title>FUN TO LEARN FRIENDS (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>26 issue/Per Year</publisher_name>
+    <image>No.150.JPG</image>
+    <Publication_Date>26 issue/Per Year</Publication_Date>
+    <Cat_Code>MCT00</Cat_Code>
+    <Cat_Description>CHILDREN &amp; TEENAGE</Cat_Description>
+    <list_price>5850.00</list_price>
+    <your_price>4680.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>102</OrderNo>
+    <isbn_13>MAG9990157</isbn_13>
+    <book_title>Food and Travel (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>10/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>10/Issue/Per Year</Publication_Date>
+    <Cat_Code>MLI00</Cat_Code>
+    <Cat_Description>LEISURE INTEREST</Cat_Description>
+    <list_price>3950.00</list_price>
+    <your_price>3160.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>103</OrderNo>
+    <isbn_13>MAG9990160</isbn_13>
+    <book_title>Men’s Fitness (US)</book_title>
+    <author>US</author>
+    <publisher_name>10/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>10/Issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>3350.00</list_price>
+    <your_price>2680.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>104</OrderNo>
+    <isbn_13>MAG9990167</isbn_13>
+    <book_title>V MAGAZINE (Q-UK) (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>4 issue/Per Year</publisher_name>
+    <image>No.167.JPG</image>
+    <Publication_Date>4 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>2380.00</list_price>
+    <your_price>1904.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>105</OrderNo>
+    <isbn_13>MAG9990170</isbn_13>
+    <book_title>Brides (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>2970.00</list_price>
+    <your_price>2376.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>106</OrderNo>
+    <isbn_13>MAG9990008</isbn_13>
+    <book_title>VOGUE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.08.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4620.00</list_price>
+    <your_price>3696.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>107</OrderNo>
+    <isbn_13>MAG9990011</isbn_13>
+    <book_title>IN TOUCH (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.11.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>13260.00</list_price>
+    <your_price>10608.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>108</OrderNo>
+    <isbn_13>MAG9990018</isbn_13>
+    <book_title>INTERIOR DESIGN (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.18.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>7140.00</list_price>
+    <your_price>5712.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>109</OrderNo>
+    <isbn_13>MAG9990021</isbn_13>
+    <book_title>PROPERTY REPORT SOUTHEAST ASIA (ASIA)</book_title>
+    <author>ASIA</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.21.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>2400.00</list_price>
+    <your_price>1920.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>110</OrderNo>
+    <isbn_13>MAG9990028</isbn_13>
+    <book_title>GRAZIA (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.28.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>14300.00</list_price>
+    <your_price>11440.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>111</OrderNo>
+    <isbn_13>MAG9990031</isbn_13>
+    <book_title>IN STYLE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.31.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5100.00</list_price>
+    <your_price>4080.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>112</OrderNo>
+    <isbn_13>MAG9990038</isbn_13>
+    <book_title>CLASSIC &amp; SPORTS CAR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.38.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>5700.00</list_price>
+    <your_price>4560.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>113</OrderNo>
+    <isbn_13>MAG9990041</isbn_13>
+    <book_title>FOUR FOUR TWO (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issue/Per Year</publisher_name>
+    <image>No.41.JPG</image>
+    <Publication_Date>13 issue/Per Year</Publication_Date>
+    <Cat_Code>MSP00</Cat_Code>
+    <Cat_Description>SPORTS</Cat_Description>
+    <list_price>6435.00</list_price>
+    <your_price>5148.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>114</OrderNo>
+    <isbn_13>MAG9990048</isbn_13>
+    <book_title>HARVARD BUSINESS REVIEW (US)</book_title>
+    <author>US</author>
+    <publisher_name>10 issue/Per Year</publisher_name>
+    <image>No.48.JPG</image>
+    <Publication_Date>10 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>9950.00</list_price>
+    <your_price>7960.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>115</OrderNo>
+    <isbn_13>MAG9990051</isbn_13>
+    <book_title>PRACTICAL PHOTOGRAPHY (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issue/Per Year</publisher_name>
+    <image>No.51.JPG</image>
+    <Publication_Date>13 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>5655.00</list_price>
+    <your_price>4524.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>116</OrderNo>
+    <isbn_13>MAG9990058</isbn_13>
+    <book_title>COSMOPOLITAN (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.58.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5220.00</list_price>
+    <your_price>4176.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>117</OrderNo>
+    <isbn_13>MAG9990061</isbn_13>
+    <book_title>EMPIRE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.61.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMU00</Cat_Code>
+    <Cat_Description>MUSIC &amp; ENTERTAINMENT</Cat_Description>
+    <list_price>5700.00</list_price>
+    <your_price>4560.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>118</OrderNo>
+    <isbn_13>MAG9990068</isbn_13>
+    <book_title>GLAMOUR (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.68.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>119</OrderNo>
+    <isbn_13>MAG9990071</isbn_13>
+    <book_title>EVO MAGAZINE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.71.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>6300.00</list_price>
+    <your_price>5040.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>120</OrderNo>
+    <isbn_13>MAG9990078</isbn_13>
+    <book_title>NEWS OF THE WORLD (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.78.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>10400.00</list_price>
+    <your_price>8320.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>121</OrderNo>
+    <isbn_13>MAG9990081</isbn_13>
+    <book_title>LIVINGETC (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.81.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>5100.00</list_price>
+    <your_price>4080.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>122</OrderNo>
+    <isbn_13>MAG9990088</isbn_13>
+    <book_title>GOLF MONTHLY (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.88.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MSP00</Cat_Code>
+    <Cat_Description>SPORTS</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>123</OrderNo>
+    <isbn_13>MAG9990091</isbn_13>
+    <book_title>GOLF MAGAZINE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.91.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MSP00</Cat_Code>
+    <Cat_Description>SPORTS</Cat_Description>
+    <list_price>4380.00</list_price>
+    <your_price>3504.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>124</OrderNo>
+    <isbn_13>MAG9990098</isbn_13>
+    <book_title>O THE OPRAH MAGAZINE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.98.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5220.00</list_price>
+    <your_price>4176.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>125</OrderNo>
+    <isbn_13>MAG9990101</isbn_13>
+    <book_title>CONDE NAST TRAVELER (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.101.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MLI00</Cat_Code>
+    <Cat_Description>LEISURE INTEREST</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>126</OrderNo>
+    <isbn_13>MAG9990108</isbn_13>
+    <book_title>T3 (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issue/Per Year</publisher_name>
+    <image>No.108.JPG</image>
+    <Publication_Date>13 issue/Per Year</Publication_Date>
+    <Cat_Code>MCO00</Cat_Code>
+    <Cat_Description>COMPUTER</Cat_Description>
+    <list_price>5525.00</list_price>
+    <your_price>4420.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>127</OrderNo>
+    <isbn_13>MAG9990111</isbn_13>
+    <book_title>INTERNI (ITA)</book_title>
+    <author>ITA</author>
+    <publisher_name>10 issue/Per Year</publisher_name>
+    <image>No.111.JPG</image>
+    <Publication_Date>10 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>12650.00</list_price>
+    <your_price>10120.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>128</OrderNo>
+    <isbn_13>MAG9990118</isbn_13>
+    <book_title>NEW (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.118.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>9620.00</list_price>
+    <your_price>7696.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>129</OrderNo>
+    <isbn_13>MAG9990121</isbn_13>
+    <book_title>ELLE D?COR (US)</book_title>
+    <author>US</author>
+    <publisher_name>8 issue/Per Year</publisher_name>
+    <image>No.121.JPG</image>
+    <Publication_Date>8 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>3080.00</list_price>
+    <your_price>2464.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>130</OrderNo>
+    <isbn_13>MAG9990128</isbn_13>
+    <book_title>PRO CYCLING (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.128.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>6300.00</list_price>
+    <your_price>5040.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>131</OrderNo>
+    <isbn_13>MAG9990131</isbn_13>
+    <book_title>HARPER'S BAZAAR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.131.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5940.00</list_price>
+    <your_price>4752.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>132</OrderNo>
+    <isbn_13>MAG9990138</isbn_13>
+    <book_title>PRIVATE EYE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>26 issue/Per Year</publisher_name>
+    <image>No.138.JPG</image>
+    <Publication_Date>26 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>3900.00</list_price>
+    <your_price>3120.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>133</OrderNo>
+    <isbn_13>MAG9990141</isbn_13>
+    <book_title>AUTOSPORT (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>51 issue/Per Year</publisher_name>
+    <image>No.141.JPG</image>
+    <Publication_Date>51 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>17595.00</list_price>
+    <your_price>14076.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>134</OrderNo>
+    <isbn_13>MAG9990148</isbn_13>
+    <book_title>PHOTOSHOP CREATIVE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issues/Per Year</publisher_name>
+    <image>No.148.JPG</image>
+    <Publication_Date>13 issues/Per Year</Publication_Date>
+    <Cat_Code>MCO00</Cat_Code>
+    <Cat_Description>COMPUTER</Cat_Description>
+    <list_price>8255.00</list_price>
+    <your_price>6604.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>135</OrderNo>
+    <isbn_13>MAG9990151</isbn_13>
+    <book_title>BUSINESSWEEK (ASIA)</book_title>
+    <author>ASIA</author>
+    <publisher_name>26 issue/Half Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>26 issue/Half Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>4940.00</list_price>
+    <your_price>3161.60</your_price>
+    <save_price>36</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>136</OrderNo>
+    <isbn_13>MAG9990158</isbn_13>
+    <book_title>FRANKIE  (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>2670.00</list_price>
+    <your_price>2136.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>137</OrderNo>
+    <isbn_13>MAG9990161</isbn_13>
+    <book_title>Oxygen (US)</book_title>
+    <author>US</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>3300.00</list_price>
+    <your_price>2640.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>138</OrderNo>
+    <isbn_13>MAG9990168</isbn_13>
+    <book_title>ANOTHER MAGAZINE (2PA-UK) (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>2 issue/Per Year</publisher_name>
+    <image>No.168.JPG</image>
+    <Publication_Date>2 issue/Per Year</Publication_Date>
+    <Cat_Code>MLF00</Cat_Code>
+    <Cat_Description>LIFESTYLE &amp; FASHION</Cat_Description>
+    <list_price>1390.00</list_price>
+    <your_price>1112.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>139</OrderNo>
+    <isbn_13>MAG9990171</isbn_13>
+    <book_title>G.Q (M-UK)  (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>6540.00</list_price>
+    <your_price>5232.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>140</OrderNo>
+    <isbn_13>MAG9990002</isbn_13>
+    <book_title>NEWSWEEK (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.02.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>9360.00</list_price>
+    <your_price>2995.20</your_price>
+    <save_price>68</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>141</OrderNo>
+    <isbn_13>MAG9990009</isbn_13>
+    <book_title>VOGUE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.09.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>6540.00</list_price>
+    <your_price>5232.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>142</OrderNo>
+    <isbn_13>MAG9990012</isbn_13>
+    <book_title>ELLE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.12.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5340.00</list_price>
+    <your_price>4272.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>143</OrderNo>
+    <isbn_13>MAG9990019</isbn_13>
+    <book_title>IN STYLE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.19.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5700.00</list_price>
+    <your_price>4560.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>144</OrderNo>
+    <isbn_13>MAG9990022</isbn_13>
+    <book_title>GENTLEMEN'S QUARTERLY (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.22.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>4980.00</list_price>
+    <your_price>3984.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>145</OrderNo>
+    <isbn_13>MAG9990029</isbn_13>
+    <book_title>GLAMOUR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.29.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>3900.00</list_price>
+    <your_price>3120.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>146</OrderNo>
+    <isbn_13>MAG9990032</isbn_13>
+    <book_title>WALL PAPER (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.32.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>6540.00</list_price>
+    <your_price>5232.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>147</OrderNo>
+    <isbn_13>MAG9990039</isbn_13>
+    <book_title>THE NEW YORKER (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.39.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>19500.00</list_price>
+    <your_price>15600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>148</OrderNo>
+    <isbn_13>MAG9990042</isbn_13>
+    <book_title>CAR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.42.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>6540.00</list_price>
+    <your_price>5232.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>149</OrderNo>
+    <isbn_13>MAG9990049</isbn_13>
+    <book_title>MARTHA STEWART LIVING (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.49.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>5220.00</list_price>
+    <your_price>4176.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>150</OrderNo>
+    <isbn_13>MAG9990052</isbn_13>
+    <book_title>AUTOCAR (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.52.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>15340.00</list_price>
+    <your_price>12272.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>151</OrderNo>
+    <isbn_13>MAG9990059</isbn_13>
+    <book_title>WHO WEEKLY (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.59.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>12220.00</list_price>
+    <your_price>9776.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>152</OrderNo>
+    <isbn_13>MAG9990062</isbn_13>
+    <book_title>COSMOPOLITAN (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.62.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5100.00</list_price>
+    <your_price>4080.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>153</OrderNo>
+    <isbn_13>MAG9990069</isbn_13>
+    <book_title>MEN'S HEALTH (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>11 issue/Per Year</publisher_name>
+    <image>No.69.JPG</image>
+    <Publication_Date>11 issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>4785.00</list_price>
+    <your_price>3828.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>154</OrderNo>
+    <isbn_13>MAG9990072</isbn_13>
+    <book_title>LIFE &amp; STYLE WEEKLY (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.72.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>13260.00</list_price>
+    <your_price>10608.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>155</OrderNo>
+    <isbn_13>MAG9990079</isbn_13>
+    <book_title>FRAME  (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>6 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>6 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>9270.00</list_price>
+    <your_price>7416.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>156</OrderNo>
+    <isbn_13>MAG9990082</isbn_13>
+    <book_title>MERCEDES ENTHUSIAST (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.82.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>157</OrderNo>
+    <isbn_13>MAG9990089</isbn_13>
+    <book_title>NEW IDEA (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.89.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>2580.00</list_price>
+    <your_price>2064.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>158</OrderNo>
+    <isbn_13>MAG9990092</isbn_13>
+    <book_title>FORBES (SG)</book_title>
+    <author>SG</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.92.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>2640.00</list_price>
+    <your_price>2112.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>159</OrderNo>
+    <isbn_13>MAG9990099</isbn_13>
+    <book_title>DELL SUDOKU (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.99.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>2220.00</list_price>
+    <your_price>1776.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>160</OrderNo>
+    <isbn_13>MAG9990102</isbn_13>
+    <book_title>SUPER BIKE (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issue/Per Year</publisher_name>
+    <image>No.102.JPG</image>
+    <Publication_Date>13 issue/Per Year</Publication_Date>
+    <Cat_Code>MMO00</Cat_Code>
+    <Cat_Description>MOTORING</Cat_Description>
+    <list_price>4875.00</list_price>
+    <your_price>3900.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>161</OrderNo>
+    <isbn_13>MAG9990109</isbn_13>
+    <book_title>TOTAL FILM (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>13 issue/Per Year</publisher_name>
+    <image>No.109.JPG</image>
+    <Publication_Date>13 issue/Per Year</Publication_Date>
+    <Cat_Code>MMU00</Cat_Code>
+    <Cat_Description>MUSIC &amp; ENTERTAINMENT</Cat_Description>
+    <list_price>4875.00</list_price>
+    <your_price>3900.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>162</OrderNo>
+    <isbn_13>MAG9990112</isbn_13>
+    <book_title>ENTERTAINMENT WEEKLY (US)</book_title>
+    <author>US</author>
+    <publisher_name>52 issue/Per Year</publisher_name>
+    <image>No.112.JPG</image>
+    <Publication_Date>52 issue/Per Year</Publication_Date>
+    <Cat_Code>MMU00</Cat_Code>
+    <Cat_Description>MUSIC &amp; ENTERTAINMENT</Cat_Description>
+    <list_price>12740.00</list_price>
+    <your_price>10192.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>163</OrderNo>
+    <isbn_13>MAG9990119</isbn_13>
+    <book_title>HOMES &amp; GARDENS (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.119.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MHI00</Cat_Code>
+    <Cat_Description>HOME INTEREST</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>164</OrderNo>
+    <isbn_13>MAG9990122</isbn_13>
+    <book_title>DISCOVERY CHANNEL (ASIA)</book_title>
+    <author>ASIA</author>
+    <publisher_name>11 issue/Per Year</publisher_name>
+    <image>No.122.JPG</image>
+    <Publication_Date>11 issue/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>2090.00</list_price>
+    <your_price>1672.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>165</OrderNo>
+    <isbn_13>MAG9990129</isbn_13>
+    <book_title>SHAPE (US)</book_title>
+    <author>US</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.129.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>3780.00</list_price>
+    <your_price>3024.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>166</OrderNo>
+    <isbn_13>MAG9990132</isbn_13>
+    <book_title>VOGUE (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.132.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>5940.00</list_price>
+    <your_price>4752.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>167</OrderNo>
+    <isbn_13>MAG9990139</isbn_13>
+    <book_title>SPARKLE WORLD (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MCT00</Cat_Code>
+    <Cat_Description>CHILDREN &amp; TEENAGE</Cat_Description>
+    <list_price>2700.00</list_price>
+    <your_price>2160.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>168</OrderNo>
+    <isbn_13>MAG9990142</isbn_13>
+    <book_title>GOURMET TRAVELLER (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.142.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>169</OrderNo>
+    <isbn_13>MAG9990149</isbn_13>
+    <book_title>DIGITAL CAMERA WORLD (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issues/Per Year</publisher_name>
+    <image>No.149.JPG</image>
+    <Publication_Date>12 issues/Per Year</Publication_Date>
+    <Cat_Code>MGI00</Cat_Code>
+    <Cat_Description>GENERAL INTEREST</Cat_Description>
+    <list_price>5220.00</list_price>
+    <your_price>4176.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>170</OrderNo>
+    <isbn_13>MAG9990152</isbn_13>
+    <book_title>THE ECONOMIST (ASIA)</book_title>
+    <author>ASIA</author>
+    <publisher_name>51 issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>51 issue/Per Year</Publication_Date>
+    <Cat_Code>MNC00</Cat_Code>
+    <Cat_Description>NEWS &amp; CURRENT AFFAIR</Cat_Description>
+    <list_price>12750.00</list_price>
+    <your_price>7650.00</your_price>
+    <save_price>40</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>171</OrderNo>
+    <isbn_13>MAG9990159</isbn_13>
+    <book_title>Men’s Fitness (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MMI00</Cat_Code>
+    <Cat_Description>MEN'S INTEREST</Cat_Description>
+    <list_price>4980.00</list_price>
+    <your_price>3984.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>172</OrderNo>
+    <isbn_13>MAG9990162</isbn_13>
+    <book_title>Oxygen (AUS)</book_title>
+    <author>AUS</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>3900.00</list_price>
+    <your_price>3120.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>173</OrderNo>
+    <isbn_13>MAG9990169</isbn_13>
+    <book_title>SIGHT &amp; SOUND (M-UK) (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12 issue/Per Year</publisher_name>
+    <image>No.169.JPG</image>
+    <Publication_Date>12 issue/Per Year</Publication_Date>
+    <Cat_Code>MMU00</Cat_Code>
+    <Cat_Description>MUSIC &amp; ENTERTAINMENT</Cat_Description>
+    <list_price>4500.00</list_price>
+    <your_price>3600.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+  <Magazine>
+    <OrderNo>174</OrderNo>
+    <isbn_13>MAG9990172</isbn_13>
+    <book_title>Tatler (M-UK)   (UK)</book_title>
+    <author>UK</author>
+    <publisher_name>12/Issue/Per Year</publisher_name>
+    <image>no_image.jpg</image>
+    <Publication_Date>12/Issue/Per Year</Publication_Date>
+    <Cat_Code>MWI00</Cat_Code>
+    <Cat_Description>WOMEN'S INTEREST</Cat_Description>
+    <list_price>4740.00</list_price>
+    <your_price>3792.00</your_price>
+    <save_price>20</save_price>
+  </Magazine>
+</dsMagazine>

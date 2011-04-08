@@ -1,0 +1,691 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPagePopup.master.vb" Inherits="MasterPagePopup" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register src="uc/ucMenu_Cat.ascx" tagname="ucMenu_Cat" tagprefix="uc2" %>
+<%@ Register src="uc/ucSubscribe.ascx" tagname="ucSubscribe" tagprefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Books, Textbooks, eBooks, Magazines, Books on Thailand</title>
+
+    <meta name="description" content="Discover Thailand's finest English language bookshops and explore the incredible range of titles: Thailand Books, Arts Books, Business Books, Children Books, Cooking Books, Design Books, Fiction, Non-Fiction, Guide Books, Books on Thailand, Book Thailand, Books Thailand" />
+
+    <meta name="keywords" content="Books, Textbooks, eBooks, Magazines, Thailand Books, Thailand Bookshop, Asia Bookshop, Bookseller, Bookstores, Book Center, Bookshop, English Language Bookshops, New Books, Promotions Books, Top 10 books, Children's Books, Fiction Books, General Books, Buy Books, Cheap Books, Cheap Textbooks, Books Online, Online Bookstore, Books on Thailand, Book Thailand, Books Thailand" />
+
+
+
+
+    <link rel="Shortcut icon" href="images/logoab.ico" />
+    <link href="css/tabStyle.css" rel="Stylesheet" type="text/css" />
+    <link href="css/tab_ajax_style.css" rel="Stylesheet" type="text/css" />
+    <link href="css/featuredcontentglider.css" rel="Stylesheet" type="text/css" />
+    <link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/page.css" rel="stylesheet" type="text/css" />
+    <link href="css/menuStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/StyleBook.css" rel="stylesheet" type="text/css" />
+    <link href="css/StyleTooltips.css" rel="stylesheet" type="text/css" />
+    <link href="css/StyleTooltipsIE6.css" rel="stylesheet" type="text/css" />
+    <link href="css/zoom.css" rel="Stylesheet" type="text/css" />
+    <link href="css/flexdropdown.css" rel="stylesheet" type="text/css" />
+    <link href="css/sitemap.css" rel="stylesheet" type="text/css" />
+    <link href="css/content.css" rel="stylesheet" type="text/css" />
+    
+    <script src="jssilde/jquery.min.js" type="text/javascript"></script>
+    <script src="jssilde/fadeslideshow.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/flexdropdown.js" type="text/javascript"></script>
+<style type="text/css">     
+.txtSearch {
+   border:0;
+   background: transparent url(images/Template/txtsearch.jpg) no-repeat;
+   height: 25px;
+   width: 350px;
+   padding: 3px 0px 0px 18px;
+}
+
+.textbox
+{
+	
+   BORDER-RIGHT: white 0px;
+   BORDER-TOP: white 0px;
+   MARGIN-TOP: 5px;
+   BORDER-LEFT: white 0px; 
+   BORDER-BOTTOM: white 0px;
+   color:Gray;
+
+}
+.txtEnew {
+   border:0;
+   background: transparent url(images/Template/txtenew.jpg) no-repeat;
+   height: 35px;
+   width: 178px;
+   padding: 3px 0px 0px 18px;
+}
+.footer {
+    font-family:Arial;
+    font-size:8pt;
+    color:#2A9239;
+    text-decoration:none;
+}
+.footer_header {
+    font-family:Arial;
+    font-size:8pt;
+    color:#2A9239;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#dhtmltooltip{
+position: absolute;
+font-family:Arial;
+font-size:8pt;
+left: -300px;
+width: 150px;
+border: 1px solid black;
+padding: 2px;
+background-color: lightyellow;
+visibility: hidden;
+z-index: 100;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+#dhtmlpointer{
+position:absolute;
+left: -300px;
+z-index: 101;
+visibility: hidden;
+}
+
+    .style1
+    {
+        color: #0066FF;
+    }
+
+</style>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18967104-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+function clearValue(obj,text)
+   {
+	   if ( obj.value == text ) obj.value = '';
+   }
+   function checkValue(obj,text)
+   {
+	   if ( obj.value == '' ) obj.value = text;
+   }
+
+ function clearText() { 
+			if(document.form1.txtName.value == "(enter something here)") 
+                document.form1.txtName.value = "" 
+				
+            } 
+            
+            function resetText() { 
+                if(document.form1.txtName.value == "") 
+                    document.form1.txtName.value = "(enter something here)" 
+            }     
+
+function winopen(){
+    window.open("popup.html", 'popupebooks', "toolbar=0,location=0,status=0, menubar=0,scrollbars=1,resizable=0,width=815,height=395,left = 100,top = 64")
+}
+
+</script>
+ 
+</head>
+<body onload="winopen();">
+<script type="text/javascript">
+
+/***********************************************
+* Cool DHTML tooltip script II- ฉ Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var offsetfromcursorX=12 //Customize x offset of tooltip
+var offsetfromcursorY=10 //Customize y offset of tooltip
+
+var offsetdivfrompointerX=10 //Customize x offset of tooltip DIV relative to pointer image
+var offsetdivfrompointerY=14 //Customize y offset of tooltip DIV relative to pointer image. Tip: Set it to (height_of_pointer_image-1).
+
+document.write('<div id="dhtmltooltip"></div>') //write out tooltip DIV
+document.write('<img id="dhtmlpointer" src="images/arrow2.gif">') //write out pointer image
+
+var ie=document.all
+var ns6=document.getElementById && !document.all
+var enabletip=false
+if (ie||ns6)
+var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
+
+var pointerobj=document.all? document.all["dhtmlpointer"] : document.getElementById? document.getElementById("dhtmlpointer") : ""
+
+function ietruebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function ddrivetip(thetext, thewidth, thecolor){
+if (ns6||ie){
+if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+tipobj.innerHTML=thetext
+enabletip=true
+return false
+}
+}
+
+function positiontip(e){
+if (enabletip){
+var nondefaultpos=false
+var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+//Find out how close the mouse is to the corner of the window
+var winwidth=ie&&!window.opera? ietruebody().clientWidth : window.innerWidth-20
+var winheight=ie&&!window.opera? ietruebody().clientHeight : window.innerHeight-20
+
+var rightedge=ie&&!window.opera? winwidth-event.clientX-offsetfromcursorX : winwidth-e.clientX-offsetfromcursorX
+var bottomedge=ie&&!window.opera? winheight-event.clientY-offsetfromcursorY : winheight-e.clientY-offsetfromcursorY
+
+var leftedge=(offsetfromcursorX<0)? offsetfromcursorX*(-1) : -1000
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<tipobj.offsetWidth){
+//move the horizontal position of the menu to the left by it's width
+tipobj.style.left=curX-tipobj.offsetWidth+"px"
+nondefaultpos=true
+}
+else if (curX<leftedge)
+tipobj.style.left="5px"
+else{
+//position the horizontal position of the menu where the mouse is positioned
+tipobj.style.left=curX+offsetfromcursorX-offsetdivfrompointerX+"px"
+pointerobj.style.left=curX+offsetfromcursorX+"px"
+}
+
+//same concept with the vertical position
+if (bottomedge<tipobj.offsetHeight){
+tipobj.style.top=curY-tipobj.offsetHeight-offsetfromcursorY+"px"
+nondefaultpos=true
+}
+else{
+tipobj.style.top=curY+offsetfromcursorY+offsetdivfrompointerY+"px"
+pointerobj.style.top=curY+offsetfromcursorY+"px"
+}
+tipobj.style.visibility="visible"
+if (!nondefaultpos)
+pointerobj.style.visibility="visible"
+else
+pointerobj.style.visibility="hidden"
+}
+}
+
+function hideddrivetip(){
+if (ns6||ie){
+enabletip=false
+tipobj.style.visibility="hidden"
+pointerobj.style.visibility="hidden"
+tipobj.style.left="-1000px"
+tipobj.style.backgroundColor=''
+tipobj.style.width=''
+}
+}
+
+document.onmousemove=positiontip
+
+</script>
+<script language = "Javascript" type="text/javascript">
+function changeText(txtB) {            
+	var textBox = document.getElementById(txtB);           
+ 	var txt = textBox.value;            
+		if (txt = "") {                
+        textBox.value = "Enter Search Criteria";                
+        textBox.style.color = "grey";            
+    }        
+}
+function subType(a, b){ if(a.value==b){ a.value=''}else if(a.value==''){ a.value=b; }else{ a.value=a.value; } }
+function chkType(a, b){ if(a.value==''){ a.value=b; }else{ a.value=a.value; } }
+      function confirm_delete()
+     {
+      return confirm('Do you want to delete this record');
+     }
+
+
+        function Focus(objname, waterMarkText) {
+            obj = document.getElementById(objname);
+            if (obj.value == waterMarkText) {
+                obj.value = "";
+                obj.className = "textbox";
+                if (obj.value == "Title, Author, Keyword or ISBN" || obj.value == "" || obj.value == null) {
+                    obj.style.color = "black";
+                }
+            }
+        }
+        function Blur(objname, waterMarkText) {
+            obj = document.getElementById(objname);
+            if (obj.value == "") {
+                obj.value = waterMarkText;
+                if (objname != "txtPassword") {
+                    obj.className = "textbox";
+                }
+                else {
+                    obj.className = "textbox";
+                }
+            }
+            else {
+                obj.className = "textbox";
+            }
+
+            if (obj.value == "Title, Author, Keyword or ISBN" || obj.value == "" || obj.value == null) {
+                obj.style.color = "gray";
+            }
+        }
+
+
+    </script>
+    
+    
+<form id="form1" runat="server" defaultbutton="btnSearch">
+<asp:ScriptManager runat="server" id="ScriptManager1"></asp:ScriptManager>
+<table style="width:100%; " border="0" cellspacing="0" cellpadding="0">
+<tr style="width:100%; height:103px;">
+    <td align="left" valign="top">
+        <table cellpadding="0" cellspacing="0" style="width:100%; background-image:url('images/Template/bgheader.jpg');"  >
+        <tr>
+            <td rowspan="3" style="height:103px" align="left"><a href="Homepage.aspx"><asp:Image ID="Image1" runat="server" 
+                style="width:321px; height:103px;" ImageUrl="~/images/Template/header_logo.jpg"/></a></td>
+            <td></td>
+            <td style="width:90px;">&nbsp;</td>
+            <td style="width:100px;">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="width:368px; height:31px; background-image: url('images/Template/txtsearch.jpg'); background-repeat:no-repeat;">
+                <asp:TextBox ID="txtFilter" runat="server" CssClass="textbox" Width="339px" 
+                onblur="Blur(this.id,'Title, Author, Keyword or ISBN')" onfocus="Focus(this.id,'Title, Author, Keyword or ISBN')" Text="Title, Author, Keyword or ISBN"></asp:TextBox>
+                <cc1:AutoCompleteExtender ID="AutoComplete_txtFilter" runat="server" ServicePath="AutoComplete.asmx" 
+                TargetControlID="txtFilter" MinimumPrefixLength="1" ServiceMethod="GetKeywords" CompletionSetCount="20"
+                CompletionInterval="300" CompletionListCssClass="autocomplete_completionListElement" /></td>
+            <td align="left" valign="top" style="width:90px; height:31px;"><asp:ImageButton ID="btnSearch" runat="server" 
+                ImageUrl="~/images/Template/btn_search.jpg" OnClientClick="wait()" /></td>
+            <td align="left" valign="middle" style="width:100px; height:31px"><asp:LinkButton ID="lnkAdvanced_search" runat="server" 
+                Font-Bold="True" Font-Names="Arial" Font-Size="8pt" Font-Underline="False" ForeColor="White">Advanced Search</asp:LinkButton></td>
+            <td align="right">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right" style="font-family:Arial; font-size:11pt; font-weight:bold; color:White; height:35px;"><table width="100%"><tr>
+            <td style="width:20%"><div id="divWait" style="display:none" ><img src="images/loading.gif" /><br/>loading...</div></td>
+            <td align="right">WELCOME!&nbsp;&nbsp;<asp:Label ID="lblCustomerName" runat="server" Font-Names="Arial" Font-Size="9pt" ForeColor="#3333FF" />
+                <asp:LinkButton ID="lnkSingIn" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="9pt" ForeColor="White">Sign In</asp:LinkButton>
+                &nbsp;<asp:Label ID="lbl" runat="server" Text="|" />&nbsp;<asp:LinkButton ID="lnkRegister" runat="server" Font-Bold="True" 
+                Font-Names="Arial" Font-Size="9pt" ForeColor="White">Register</asp:LinkButton><asp:LinkButton ID="lnkSing_Out" runat="server" 
+                Font-Bold="True" Font-Names="Arial" Font-Size="9pt" ForeColor="White">Sign Out</asp:LinkButton></td></tr></table></td>
+            <td style="height: 35px">&nbsp;</td>
+        </tr>
+        </table></td>
+</tr>
+<tr>
+    <td align="left" valign="top">
+        <table border="0" cellspacing="0" cellpadding="0" style="width:100%; background-image: url('images/Template/bgmenu1.jpg');">
+        <tr>
+            <td align="left" valign="top" style="width:40%">&nbsp;</td>
+            <td align="left" valign="top">
+                <table style="width:100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="center"><asp:ImageButton ID="imgHome" runat="server" ImageUrl="~/images/Template/home.jpg" /></td>
+                    <td align="center" style="width:9px; height:34px; background-image:url('images/Template/linemenu1.jpg');"></td>
+                    <td align="center"><asp:ImageButton ID="imgOrder_Status" runat="server" ImageUrl="~/images/Template/order_status.jpg" /></td>
+                    <td align="center" style="width:9px; height:34px; background-image:url('images/Template/linemenu1.jpg');"></td>
+                    <td align="center"><asp:ImageButton ID="imgMyAccoung" runat="server" ImageUrl="~/images/Template/my_account.jpg" /></td>
+                    <td align="center" style="width:9px; height:34px; background-image:url('images/Template/linemenu1.jpg');"></td>
+                    <% If Not IsNothing(Request.Cookies("myCookie_user")) Then%>
+                    <td align="center"><asp:ImageButton ID="ImagMyEbook" runat="server" ImageUrl="~/images/Template/my_ebook.jpg" OnClick="ImagMyEbook_Click" /></td>
+                    <td align="center" style="width:9px; height:34px; background-image:url('images/Template/linemenu1.jpg');"></td>
+                    <% End If%>
+                    <td align="center"><asp:ImageButton ID="imgShopping" runat="server" ImageUrl="~/images/Template/shopping_cart.jpg" /></td>
+                    <td align="center" style="width:9px; height:34px; background-image:url('images/Template/linemenu1.jpg');"></td>
+                    <td align="center"><asp:ImageButton ID="imgWish_List" runat="server" ImageUrl="~/images/Template/wish_list.jpg" /></td>
+                    <td align="center" style="width:9px; height:34px; background-image:url('images/Template/linemenu1.jpg');"></td>
+                    <td align="center"><asp:ImageButton ID="imgHelp" runat="server" ImageUrl="~/images/Template/help.jpg" /></td>
+                </tr>
+                </table></td>
+        </tr>
+        </table></td>
+</tr>
+<tr>
+    <td align="left" valign="top">
+        <table style="width:100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="left" valign="top" style="width:210px; height:53px;">
+                <table border="0" cellspacing="0" cellpadding="0" style="width:210px; height:53px; background-image: url('images/Template/bgfacebook.jpg');">
+                <tr>
+                    <td style="width:176px" align="right"><a href="http://www.facebook.com/pages/Bangkok-Thailand/Asia-Books/142664651906" target="_blank">
+                        <asp:Image ID="img_facebook" runat="server" ImageUrl="~/images/Template/facebook_logo.jpg" /></a></td>
+                    <td style="width:44px">&nbsp;</td>
+                </tr>
+                </table></td>
+            <td align="left" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" style="width:100%; background-image: url('images/Template/bgmenu2.jpg');">
+                <tr align="center">
+                    <td><asp:ImageButton ID="imgThailand_Insight" runat="server" ImageUrl="~/images/Template/thailand_insight.jpg" /></td>
+                    <td align="center" style="width:13px; height:53px; background-image:url('images/Template/linemenu2.jpg');"></td>
+                    <td><asp:ImageButton ID="imgBestsellers" runat="server" ImageUrl="~/images/Template/bestsellers.jpg" /></td>
+                    <td align="center" style="width:13px; height:53px; background-image:url('images/Template/linemenu2.jpg');"></td>
+                    <td><asp:ImageButton ID="imgComing_Soon" runat="server" ImageUrl="~/images/Template/coming_soon.jpg" /></td>
+                    <td align="center" style="width:13px; height:53px; background-image:url('images/Template/linemenu2.jpg');"></td>
+                    <td><asp:ImageButton ID="imgBooks" runat="server" ImageUrl="~/images/Template/books.jpg" /></td>
+                    <td align="center" style="width:13px; height:53px; background-image:url('images/Template/linemenu2.jpg');"></td>
+                    <td><asp:ImageButton ID="imgMagazine" runat="server" ImageUrl="~/images/Template/magazine.jpg" /></td>
+                    <td align="center" style="width:13px; height:53px; background-image:url('images/Template/linemenu2.jpg');"></td>
+                    <td><asp:ImageButton ID="imgeBooks" runat="server" ImageUrl="~/images/Template/ebooks.gif" onmouseover="this.src='images/Template/ebooks_over.gif';" onmouseout="this.src='images/Template/ebooks.gif';" /></td>
+                    <td align="center" style="width:13px; height:53px; background-image:url('images/Template/linemenu2.jpg');"></td>
+                    <td><asp:ImageButton ID="imgStores_Event" runat="server" ImageUrl="~/images/Template/stores_event.jpg" /></td>
+                    <td align="right" style="width:13px; height:53px; background-image:url('images/Template/endmenu2.jpg');"></td>
+                </tr>
+                </table></td>
+            </tr>
+        </table>
+      </td>
+</tr>
+<tr>
+    <td align="left" valign="top">
+        <table border="0" cellspacing="0" cellpadding="0" style="width:100%">
+        <tr>
+            <td align="left" valign="top" style="width:210px">
+                <table style="width:100%; height:100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="left" valign="top"><uc2:ucMenu_Cat ID="ucMenu_Cat1" runat="server" /></td>
+                </tr>
+                <tr>
+                    <td align="center">&nbsp;</td>
+                </tr>
+                    <tr>
+                    <td>&nbsp;</td>                        
+                    </tr>
+                    <tr>
+                    <td align="center">
+        <asp:Image ID="Image46" runat="server" 
+            ImageUrl="~/images/Template/Buy-3-eBooks-get-20%-discount_green.jpg" />
+                        </td>                        
+                    </tr>
+                    <tr>
+                    <td align="center">&nbsp;</td>                        
+                    </tr>
+                    <tr>
+                    <td align="center">
+        <asp:Image ID="Image47" runat="server" 
+            ImageUrl="~/images/Template/Buy-4-books-get-1-free-eBook-03.jpg" />
+                        </td>                        
+                    </tr>
+                    <tr>
+                    <td align="center">&nbsp;</td>                        
+                    </tr>
+                    <tr>
+                    <td align="center"><a href="About_Free_Shipping.aspx"><asp:Image ID="Image42" runat="server" 
+                        ImageUrl="~/images/Template/FreeDelivery_Banner.jpg" Border="0" /></a></td>                        
+                    </tr>
+                <tr>
+                    <td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center" style="width:100%; height:22px; background-image:url('images/Template/logo_reading.jpg'); 
+                        background-repeat:no-repeat; background-position:center;"></td>
+                </tr>
+                <tr>
+                     <td align="center"><a href="Reading_Time.aspx?Number=5">
+                        <asp:Image ID="Image48" runat="server" 
+                        ImageUrl="~/images/Template/Reading_Time/CH_Cover.jpg" /></a></td>                        
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>                        
+                </tr>
+                <tr>
+                    <td align="center">
+                        <a href="Reading_With_Your_Kids.aspx"><asp:Image ID="Image52" runat="server" 
+                            ImageUrl="~/images/reading_with_your_kids.jpg" /></a>
+                    </td>                        
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>                        
+                </tr>
+                <tr>
+                    <td align="center"><a href="https://www.asiabooks.com/Readers_Theatre" target="_blank"><asp:Image ID="Image49" runat="server" 
+                        ImageUrl="~/images/Readers Theatre/readers_theatre.jpg" /></a></td>                        
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>                        
+                </tr>
+                <tr>
+                    <td align="center">
+                        <a href="https://www.asiabooks.com/career/service_opportunities.asp" target="_blank"><asp:Image ID="Image53" runat="server" 
+                            ImageUrl="~/images/Template/Human-Resources.jpg" /></a>
+                    </td>                        
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>                        
+                </tr>
+                </table></td>
+            <td valign="top" style="width:5px">&nbsp;</td>
+            <td valign="top">
+                <table style="width:100%">
+                    <tr><td style="width:100%">
+                     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                
+                    </asp:ContentPlaceHolder>
+                    </td></tr>
+                </table>
+               
+            </td>
+        </tr>
+        </table></td>
+</tr>
+<tr>
+    <td style="height: 19px">&nbsp;</td>
+</tr>
+<tr>
+    <td align="left" valign="top">
+        <table border="0" cellspacing="0" cellpadding="0" style="width:100%">
+        <tr>
+            <td>&nbsp;</td>
+            <td rowspan="2" style="width:300px"><uc3:ucSubscribe ID="ucSubscribe1" runat="server" /></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2" align="right" style="width:130px; height:61px; background-image:url('images/Template/logo_registered.jpg'); 
+                background-position:right; background-repeat:no-repeat;"></td>
+            <td rowspan="2" align="center" style="width:149px; background-image:url('images/Template/logo_verisign.jpg'); 
+                background-position:right; background-repeat:no-repeat;">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="width:15px"></td>
+            <td align="left" class="font_other" valign="bottom">
+                <table border="0" cellpadding="0" cellspacing="0" style="width:350px;">
+                <tr>
+                    <td style="width:95px; height:60px; background-image:url('images/Template/online_user.gif'); 
+                        background-repeat:no-repeat;"></td>
+                    <td><br /><br /><asp:Label ID="lbUserActive" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="8pt" ForeColor="#FF6600" /></td>
+                    <%--<td style="width:101px; height:60px; background-image:url('images/Template/total_visited.gif'); 
+                        background-repeat:no-repeat;"></td>
+                    <td><br /><br /><asp:Label ID="lbUserVisits" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="8pt" ForeColor="#FF6600" /></td>
+                </tr>
+                <tr>
+                    <td style="width:95px">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td style="width:101px; height:8px; background-image:url('images/Template/start_web.gif'); 
+                        background-repeat:no-repeat; background-position:center;"></td>
+                    <td>&nbsp;</td>--%>
+                </tr>
+                </table></td>
+            <td>&nbsp;</td>
+            <td style="width:15px"></td>
+        </tr>
+        </table></td>
+</tr>
+<tr>
+    <td>
+        <table style="width:100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="width:14px;"></td>
+            <td class="style1">&nbsp;</td>
+            <td style="width:12px;"></td>
+        </tr>
+        <tr>
+            <td style="width:14px; height:70px; background-image:url('images/Template/footer_start.jpg'); background-repeat:no-repeat;"></td>
+            <td>
+                <table border="0" cellspacing="0" cellpadding="0" style="width:100%; height:70px; background-image: url('images/Template/footer_bg.jpg');" >
+                <tr>
+                    <td>
+                        <table style="width:269px; height:70px;" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="5" class="footer_header"><br />ASIA BOOKS Service</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <a href="About_Us.aspx" class="footer" style="text-decoration:none">About Us</a></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <a href="Online_Order.aspx" class="footer" style="text-decoration:none">Online Orders</a></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <a class="footer" href="Contact_Us.aspx" style="text-decoration: none">Contact Us</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <asp:LinkButton ID="lnkMember_Ship" runat="server" CssClass="footer">Membership</asp:LinkButton></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;" 
+                                colspan="2"><a href="https://www.asiabooks.com/career/service_opportunities.asp" target="_blank" style="font-family: arial, Helvetica, sans-serif; font-size: 8pt">Career Opportunities</a></td>
+                            <td></td>
+                        </tr>
+                        </table></td>
+                    <td style="width:17px; height:70px; background-image:url('images/Template/footer_line.jpg'); background-repeat:no-repeat;"></td>
+                    <td>
+                        <table border="0" cellspacing="0" cellpadding="0" style="width:245px; height:70px;">
+                        <tr>
+                            <td colspan="4" class="footer_header"><br />My Account</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <asp:LinkButton ID="lnkTrack_Order" runat="server" CssClass="footer">Track Recent Order</asp:LinkButton></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <asp:LinkButton ID="lnkEdit_Profile" runat="server" CssClass="footer">Edit Your Profile</asp:LinkButton></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <asp:LinkButton ID="lnkForgot" runat="server" CssClass="footer">Forgotten Password</asp:LinkButton></td>
+                            <td>&nbsp;</td>
+                            <td></td>
+                        </tr>
+                        </table></td>
+                    <td style="width:17px; height:70px; background-image:url('images/Template/footer_line.jpg'); background-repeat:no-repeat;"></td>
+                    <td>
+                        <table style="width:148px; height:70px;" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="3" class="footer_header"><br />Shipping &amp; Delivery</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <a class="footer" href="About_Free_Shipping.aspx" style="text-decoration: none">About Free Shipping</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <asp:LinkButton ID="lnkShipping_Rate" runat="server" CssClass="footer">Shipping Rates</asp:LinkButton></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        </table></td>
+                    <td style="width:17px; height:70px; background-image:url('images/Template/footer_line.jpg'); background-repeat:no-repeat;"></td>
+                    <td>
+                        <table border="0" cellspacing="0" cellpadding="0" style="width:245px; height:70px;">
+                        <tr>
+                            <td colspan="4" class="footer_header"><br />Help</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <asp:LinkButton ID="lnkCustomer_Ser" runat="server" CssClass="footer">Customer Service</asp:LinkButton></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <asp:LinkButton ID="lnkSite_Map" runat="server" CssClass="footer">Site Map</asp:LinkButton></td>
+                            <td style="padding-left:12px; background-image:url('images/Template/bullet_g.gif'); background-position:left; background-repeat:no-repeat;">
+                                <a class="footer" href="FAQ.aspx" style="text-decoration: none">FAQs</a></td>
+                            <td></td>
+                        </tr>
+                        </table></td>
+                </tr>
+                </table></td>
+            <td style="width:12px; height:70px; background-image:url('images/Template/footer_end.jpg'); background-repeat:no-repeat;"></td>
+        </tr>
+        </table></td>
+</tr>
+<tr>
+    <td>
+        <table border="0" cellspacing="0" cellpadding="0" style="width:100%; background-image: url('images/Template/footer_bg2.jpg');" >
+        <tr>
+            <td style="width:14px; height:31px; background-image:url('images/Template/footer_start2.jpg'); background-repeat:no-repeat;"></td>
+            <td>
+                <table style="width:100%; height:31px;" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td valign="middle" style="width:269px;" align="left" class="footer_header">Terms of Use,Copyright,and Privacy Policy</td>
+                    <td valign="top" style="width:245px;"></td>
+                    <td valign="top" style="width:148px;"></td>
+                    <td valign="top"></td>
+                </tr>
+                </table></td>
+            <td style="width:12px; height:31px; background-image:url('images/Template/footer_end2.jpg'); background-repeat:no-repeat;"></td>
+        </tr>
+        </table></td>
+</tr>
+<tr>
+    <td align="left" class="detailbook_detail">&nbsp;&nbsp;&nbsp; Please be noted our website will be fully compatible by using Internet Explorer 7.0 and above, Firefox 3.0 and above, Google Chrome 4.0 and above, and Safari 3.0 and above.(65)</td>
+</tr>
+</table>
+</form>
+
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. -->
+<!-- Version: 8.6.2 -->
+<!-- Tag Builder Version: 3.0  -->
+<script src="js/webtrends.js" type="text/javascript"></script>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+_tag.dcsCollect();
+//]]>>
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="https://sdc.inetasia.com/dcsgwfjfpgry1vcc5ltzvzw8e_7i7y/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->
+
+</body>
+</html>

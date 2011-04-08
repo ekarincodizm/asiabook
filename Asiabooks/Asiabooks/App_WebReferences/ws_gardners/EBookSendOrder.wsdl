@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://connect6.gardners.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://connect6.gardners.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://connect6.gardners.com/">
+      <s:element name="HelloGardners">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloGardnersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloGardnersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PlaceEBookOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EBOrder" type="tns:EBookOrderMsg" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EBookOrderMsg">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UniqueRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SecondaryRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ean" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EBookFormat" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pids" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EndUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocalSalesTax" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PlaceEBookOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlaceEBookOrderResult" type="tns:EBookOrderReply" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EBookOrderReply">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UniqueRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SecondaryRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ean" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EBookFormat" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RequestDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EBDownload" type="tns:EBookDownloadMsg" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EBookDownloadMsg">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RequestDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestDownloadResult" type="tns:EBookDownloadReply" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EBookDownloadReply">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AccountCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UniqueRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SecondaryRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ean" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EBookFormat" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ActivateEBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EBOrder" type="tns:EBookActivateMsg" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EBookActivateMsg">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UniqueRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorityCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ean" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EBookFormat" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ActivateEBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActivateEBookResult" type="tns:EBookActivateReply" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EBookActivateReply">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UniqueRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorityCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ean" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EBookFormat" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ActivationDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EBDownload" type="tns:EBookDownloadMsg" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivationDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActivationDownloadResult" type="tns:EBookDownloadReply" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoanEBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EBOrder" type="tns:EBookLoanMsg" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EBookLoanMsg">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UniqueRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorityCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ean" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EBookFormat" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoanDays" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoanEBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoanEBookResult" type="tns:EBookLoanReply" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EBookLoanReply">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UniqueRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorityCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ean" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EBookFormat" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoanDays" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoanDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EBDownload" type="tns:EBookDownloadMsg" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoanDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoanDownloadResult" type="tns:EBookDownloadReply" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloGardnersSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloGardners" />
+  </wsdl:message>
+  <wsdl:message name="HelloGardnersSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloGardnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="PlaceEBookOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:PlaceEBookOrder" />
+  </wsdl:message>
+  <wsdl:message name="PlaceEBookOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:PlaceEBookOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestDownload" />
+  </wsdl:message>
+  <wsdl:message name="RequestDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActivateEBookSoapIn">
+    <wsdl:part name="parameters" element="tns:ActivateEBook" />
+  </wsdl:message>
+  <wsdl:message name="ActivateEBookSoapOut">
+    <wsdl:part name="parameters" element="tns:ActivateEBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActivationDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:ActivationDownload" />
+  </wsdl:message>
+  <wsdl:message name="ActivationDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:ActivationDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoanEBookSoapIn">
+    <wsdl:part name="parameters" element="tns:LoanEBook" />
+  </wsdl:message>
+  <wsdl:message name="LoanEBookSoapOut">
+    <wsdl:part name="parameters" element="tns:LoanEBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoanDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:LoanDownload" />
+  </wsdl:message>
+  <wsdl:message name="LoanDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:LoanDownloadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EBookSendOrderSoap">
+    <wsdl:operation name="HelloGardners">
+      <wsdl:input message="tns:HelloGardnersSoapIn" />
+      <wsdl:output message="tns:HelloGardnersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PlaceEBookOrder">
+      <wsdl:input message="tns:PlaceEBookOrderSoapIn" />
+      <wsdl:output message="tns:PlaceEBookOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestDownload">
+      <wsdl:input message="tns:RequestDownloadSoapIn" />
+      <wsdl:output message="tns:RequestDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateEBook">
+      <wsdl:input message="tns:ActivateEBookSoapIn" />
+      <wsdl:output message="tns:ActivateEBookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivationDownload">
+      <wsdl:input message="tns:ActivationDownloadSoapIn" />
+      <wsdl:output message="tns:ActivationDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoanEBook">
+      <wsdl:input message="tns:LoanEBookSoapIn" />
+      <wsdl:output message="tns:LoanEBookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoanDownload">
+      <wsdl:input message="tns:LoanDownloadSoapIn" />
+      <wsdl:output message="tns:LoanDownloadSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EBookSendOrderSoap" type="tns:EBookSendOrderSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloGardners">
+      <soap:operation soapAction="http://connect6.gardners.com/HelloGardners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlaceEBookOrder">
+      <soap:operation soapAction="http://connect6.gardners.com/PlaceEBookOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestDownload">
+      <soap:operation soapAction="http://connect6.gardners.com/RequestDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateEBook">
+      <soap:operation soapAction="http://connect6.gardners.com/ActivateEBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivationDownload">
+      <soap:operation soapAction="http://connect6.gardners.com/ActivationDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoanEBook">
+      <soap:operation soapAction="http://connect6.gardners.com/LoanEBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoanDownload">
+      <soap:operation soapAction="http://connect6.gardners.com/LoanDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EBookSendOrderSoap12" type="tns:EBookSendOrderSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloGardners">
+      <soap12:operation soapAction="http://connect6.gardners.com/HelloGardners" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlaceEBookOrder">
+      <soap12:operation soapAction="http://connect6.gardners.com/PlaceEBookOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestDownload">
+      <soap12:operation soapAction="http://connect6.gardners.com/RequestDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateEBook">
+      <soap12:operation soapAction="http://connect6.gardners.com/ActivateEBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivationDownload">
+      <soap12:operation soapAction="http://connect6.gardners.com/ActivationDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoanEBook">
+      <soap12:operation soapAction="http://connect6.gardners.com/LoanEBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoanDownload">
+      <soap12:operation soapAction="http://connect6.gardners.com/LoanDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EBookSendOrder">
+    <wsdl:port name="EBookSendOrderSoap" binding="tns:EBookSendOrderSoap">
+      <soap:address location="http://connect6.gardners.com/ExternalRecOrder/EBookSendOrder.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EBookSendOrderSoap12" binding="tns:EBookSendOrderSoap12">
+      <soap12:address location="http://connect6.gardners.com/ExternalRecOrder/EBookSendOrder.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

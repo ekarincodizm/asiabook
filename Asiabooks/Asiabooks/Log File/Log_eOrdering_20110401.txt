@@ -1,0 +1,3 @@
+01/04/2011 01:12:19; CallFunation confirm_order; CallServiceURL ; IPAddress ; DocumrntNo 110401000001; MemberNo ; Amount ; TanksURL ; Description Thread was being aborted. System.Threading.ThreadAbortException: Thread was being aborted.
+   at Customer_Order_Internet.Method_Payment() in D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\Asiabooks\Customer_Order_Internet.aspx.vb:line 2877
+   at Customer_Order_Internet.confirm_order() in D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\Asiabooks\Customer_Order_Internet.aspx.vb:line 2725;

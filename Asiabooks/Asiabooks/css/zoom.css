@@ -1,0 +1,33 @@
+﻿/* Photo-Caption PZ3 CSS v080630 
+* copyright: http://randsco.com/copyright 
+* www.randsco.com 
+*/
+
+.PZ3zoom { border:none; }
+.PZ3zoom a,.PZ3zoom a:visited 
+{ 
+	display:block;
+	padding:0; 
+	overflow:hidden; 
+	text-decoration:none;
+	height:100%; 
+	width:100%; 
+}
+
+.PZ3zoom a:hover 
+{ 
+	position:absolute;
+	z-index:999; 
+	padding:0; 
+	background:none; 
+	cursor:hand; 
+	height:auto; 
+	width:auto;
+	overflow:visible; 
+	margin:-1px 0 0 -1px; 
+}
+
+.PZ3zoom a img { border:0; height:105px; width:75px; }
+.PZ3zoom a:hover img { height:225px; width:155px; border:1; }
+
+/* End Photo-Caption Zoom CSS */ 

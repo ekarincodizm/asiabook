@@ -1,0 +1,4 @@
+13/02/2011 12:00:07; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 99011900002311; MemberNo ; Amount ; TanksURL ; Description vendorid=1607,orderno=99011900002311,instanceid=,status=0;
+13/02/2011 12:14:00; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 99011900002311; MemberNo ; Amount ; TanksURL ; Description vendorid=1607,orderno=99011900002311,instanceid=,status=0;
+13/02/2011 12:17:09; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 99011900002311; MemberNo ; Amount ; TanksURL ; Description vendorid=1607,orderno=99011900002311,instanceid=,status=0;
+13/02/2011 12:28:50; CallFunation IngramCallbackStatus; CallServiceURL ; IPAddress ; DocumrntNo 99011900002311; MemberNo ; Amount ; TanksURL ; Description vendorid=1607,orderno=99011900002311,instanceid=,status=0;

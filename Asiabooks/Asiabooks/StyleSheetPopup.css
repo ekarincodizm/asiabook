@@ -1,0 +1,135 @@
+﻿
+body,td,th {
+	font-family: Helvetica;
+	font-size: 9pt;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {
+	font-size: 12.5pt;
+	font-weight: bold;
+}
+.style3 {
+	font-size: 10pt;
+	color: #acf9c5;
+}
+.style5 {font-size: 10pt; color: #005225; }
+.style6 {font-size: 12.5pt}
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:hover {
+	color: #71F49B;
+	text-decoration: none;
+}
+a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.style11 {color: #FFFFFF; font-weight: bold; font-size: 10pt; }
+.style13 {
+	color: #00a24a;
+	font-weight: bold;
+	font-size: 21pt;
+}
+.style17 {font-size: 16.5pt}
+.style19 {color: #00a24a; font-weight: bold; font-size: 10pt; }
+.style23 {
+	color: #666666;
+	font-size: 14pt;
+}
+.style24 {
+	color: #666666;
+	font-size: 11pt;
+}
+.style26 {font-size: 9pt}
+.style31 {color: #00a24a; font-weight: bold; font-size:8pt; }
+.style32 {color: #666666; font-size: 14pt; font-weight: bold; }
+.style33 {
+	color: #666666;
+	font-size: 9pt;
+}
+.style37 {font-size: 12pt}
+.style47 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 8pt;
+}
+.style49 {color: #00a24a; font-weight: bold; font-size: 12pt; }
+.style52 {color: #666666; font-weight: bold; font-size: 12pt; }
+#Purchase {
+	position:absolute;
+	left:387px;
+	top:119px;
+	width:230px;
+	height:100;
+	z-index:1;
+	visibility: hidden;
+}
+.style61 {
+	font-weight: bold;
+	color: #27292A;
+	font-size: 8pt;
+}
+#Purchase2 {	position:absolute;
+	left:387px;
+	top:124px;
+	width:230px;
+	height:99px;
+	z-index:1;
+	visibility: hidden;
+}
+#admin {
+	position:absolute;
+	left:258px;
+	top:119px;
+	width:231px;
+	height:100;
+	z-index:2;
+	visibility: hidden;
+}
+#apDiv1 {
+	position:absolute;
+	left:516px;
+	top:119px;
+	width:217px;
+	height:100;
+	z-index:3;
+	visibility: hidden;
+}
+#master {
+	position:absolute;
+	left:645px;
+	top:119px;
+	width:225px;
+	height:100;
+	z-index:4;
+	visibility: hidden;
+}
+.style62 {color: #666666; font-size: 10pt; }
+.style64 {color: #00A24A; font-size: 10pt; font-weight: bold; }
+.style66 {color: #00A24A;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.style76 {font-size: 9pt;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.gridtxt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:  #333333;
+	background-color: transparent;
+	border-style :None;
+}

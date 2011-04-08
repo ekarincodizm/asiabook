@@ -1,0 +1,108 @@
+﻿div#i_containTab{   
+    position:relative;   
+    display:block;   
+    width:100%;
+	top: 0px;
+	left: 0px;
+}   
+
+ul#navi_containTab{   
+    list-style:none;   
+    padding:0;   
+    margin:0;      
+    width:100%;   
+   /* background-color:#FCF;    */
+}   
+
+ul#navi_containTab li{   
+    display:block;   
+    float:left;   
+    height:25px;       
+    width:100px;  /* กำหนดความกว้างทั้งหมด  หารด้วยจำนวนเมนูแท็บ  */  
+    border:0px solid #CCC;   
+    line-height:25px;   
+    cursor:pointer;   
+    text-align:center;   
+}   
+
+/* class รูปแบบของแต่ละเมนู */  
+.tabNavi1
+{
+	background-color: #802CAD;
+	color:White;
+	font-weight:bold;
+}   
+.tabNavi2
+{
+	background-color: #0679B0;
+	color: White;
+	font-weight: bold;
+}   
+.tabNavi3
+{
+	background-color: #5104F0;
+	color:White;
+	font-weight:bold;
+}   
+
+.tabNavi4
+{
+	background-color: #3D9438;
+	color: White;
+	font-weight: bold;
+}   
+.tabNavi5
+{
+	background-color: #DF7811;
+	color: White;
+	font-weight: bold;
+}   
+  
+ul#detail_containTab{   
+    list-style:none;   
+    padding:0;   
+    margin:0;      
+    width:100%;    
+}   
+
+ul#detail_containTab li{   
+    float:left;   
+    width:100%;   
+    height:375px;      
+}   
+/* class รูปแบบของแต่ละเนื้อหา */  
+
+.detailContent1
+{
+	background-color: #E3C9F1;
+	display: block;
+	border: 1px solid #802CAD;
+}   
+
+.detailContent2
+{
+	background-color: #B1E3FC;
+	display: none;
+	border: 1px solid #0679B0;
+}   
+
+.detailContent3
+{
+	background-color: #B5D6FD;
+	display: none;
+	border: 1px solid #5104F0;
+}   
+
+.detailContent4
+{
+	background-color: #B7FFB7;
+	display: none;
+	border: 1px solid #3D9438;
+}
+   
+.detailContent5
+{
+	background-color: #F9D3AE;
+	display: none;
+	border: 1px solid #DF7811;
+}   

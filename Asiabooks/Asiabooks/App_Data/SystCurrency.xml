@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<dsSystCurrency>
+  <SystCurrency>
+    <currency_code>BAHT</currency_code>
+    <currency_name>Thailand</currency_name>
+    <exchange_rate>1.000000</exchange_rate>
+    <exchange_rate_internet>1.000000</exchange_rate_internet>
+  </SystCurrency>
+  <SystCurrency>
+    <currency_code>EUR</currency_code>
+    <currency_name>Euro Zone</currency_name>
+    <exchange_rate>48.100000</exchange_rate>
+    <exchange_rate_internet>42.408750</exchange_rate_internet>
+  </SystCurrency>
+  <SystCurrency>
+    <currency_code>GBP</currency_code>
+    <currency_name>England</currency_name>
+    <exchange_rate>52.340000</exchange_rate>
+    <exchange_rate_internet>50.010000</exchange_rate_internet>
+  </SystCurrency>
+  <SystCurrency>
+    <currency_code>JPY</currency_code>
+    <currency_name>Japan</currency_name>
+    <exchange_rate>39.100000</exchange_rate>
+    <exchange_rate_internet>37.675000</exchange_rate_internet>
+  </SystCurrency>
+  <SystCurrency>
+    <currency_code>SGD</currency_code>
+    <currency_name>Singapore</currency_name>
+    <exchange_rate>24.690000</exchange_rate>
+    <exchange_rate_internet>24.243750</exchange_rate_internet>
+  </SystCurrency>
+  <SystCurrency>
+    <currency_code>USD</currency_code>
+    <currency_name>Dollar</currency_name>
+    <exchange_rate>32.250000</exchange_rate>
+    <exchange_rate_internet>30.710000</exchange_rate_internet>
+  </SystCurrency>
+</dsSystCurrency>

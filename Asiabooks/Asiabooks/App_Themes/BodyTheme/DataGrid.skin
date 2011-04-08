@@ -1,0 +1,31 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<%--
+BackColor="#FFFFFF" BorderColor="#FFFFFF" BorderWidth="1px" CellPadding="0" CellSpacing="0"
+    ForeColor="Black"  ShowHeader="False"
+    GridLines="Horizontal" ShowFooter="False"
+    --%>
+<%@ Register Assembly="MycustomDG" Namespace="MycustomDG" TagPrefix="Saifi" %>
+
+<Saifi:MyDg runat="server" AllowPaging="True" 
+    AutoGenerateColumns="False">
+        <PagerStyle PageButtonCount="5" Mode="NumericPages" BackColor="#FFFFFF" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+        <FooterStyle BackColor="Tan" />
+        <SelectedItemStyle BackColor="#000000" ForeColor="#000000" />
+        <AlternatingItemStyle BackColor="#000000" />
+        <HeaderStyle BackColor="#000000" Font-Bold="True"/>
+</Saifi:MyDg>
