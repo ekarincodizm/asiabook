@@ -1,0 +1,30 @@
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.xml
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\obj\Debug\Eordering.BusinessLogic.Resources.resources
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.vbproj.GenerateResource.Cache
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.xml
+D:\Asia Books\SourceCode\Project Web Aasiabooks\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.pdb
+D:\Project\Promptnow\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+D:\Project\Promptnow\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\Project\Promptnow\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\Project\Promptnow\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.xml
+D:\Project\Promptnow\Asiabooks\BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Promptnow\Asiabooks\BusinessLogic\obj\Debug\Eordering.BusinessLogic.Resources.resources
+D:\Project\Promptnow\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.vbproj.GenerateResource.Cache
+D:\Project\Promptnow\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\Project\Promptnow\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.xml
+D:\Project\Promptnow\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.pdb
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\bin\Debug\BusinessLogic.xml
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\Eordering.BusinessLogic.Resources.resources
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\BusinessLogic.vbproj.GenerateResource.Cache
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\BusinessLogic.xml
+D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\BusinessLogic.pdb
