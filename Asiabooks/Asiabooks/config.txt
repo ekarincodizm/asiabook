@@ -19,7 +19,12 @@
 #User=sa
 #Password=123456
 
-Server=192.168.100.38
-DbName=eOrdering-test
+#Server=192.168.100.38
+#DbName=eOrdering-test
+#User=eordering
+#Password=asiabookseordering
+
+Server=203.170.160.69
+DbName=eOrdering-PM
 User=eordering
 Password=asiabookseordering

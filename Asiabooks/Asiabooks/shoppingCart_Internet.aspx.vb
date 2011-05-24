@@ -14,56 +14,94 @@ Partial Class shoppingCart_Internet
     Public PopupPromotion As Boolean
     Dim count_item As Double = 0
 
-    Private Sub Class_GetData_PromotionDiscount()
-        Dim datatable As New DataTable
-        datatable = uFunction.getDataTable(uCon.conn, "SELECT buy , discount FROM ebook_promotion WHERE status = 1 AND promotion = 1")
-        If datatable.Rows.Count > 0 Then
-            Session("discount") = CDbl(datatable.Rows(0).Item("discount")).ToString("##")
-            Session("buy_ebook") = datatable.Rows(0).Item("buy").ToString
-            lblMsg2.Text = "Enjoy our special promotion Buy " + Session("buy_ebook").ToString + " eBooks get " + Session("discount").ToString + "% discount! "
-        Else
-            Session("discount") = Nothing
-            Session("buy_ebook") = Nothing
-            Me.lbltxt_promotion.Visible = False
-            Me.lbldiscount.Visible = False
-            'If Me.IsPostBack Then
-                'Class_eBook_Recalculate()
-                'loadData()
-            'End If
+    Private Sub CheckPromotion()
+        If Not IsPostBack Then
+            Dim datatable As New DataTable
+            Dim ClassPromotion As New Class_Promotion
+
+            Dim BOOKS_SHOPPING As DataTable = Session("In_Branch")
+            Dim BOOKS_JOBBER As DataTable = Session("jobber")
+            Dim EBOOKS_SHOPPING As DataTable = Session("ebook_shopping")
+
+            If BOOKS_SHOPPING Is Nothing Then
+                If Not BOOKS_JOBBER Is Nothing Then
+                    BOOKS_SHOPPING = BOOKS_JOBBER
+                End If
+            Else
+                If Not BOOKS_JOBBER Is Nothing Then
+                    BOOKS_SHOPPING.Merge(BOOKS_JOBBER)
+                End If
+            End If
+
+
+            Dim BOOKS_PRICE As Integer = CInt(Session("amount_Branch")) + CInt(Session("amount_Jobber"))
+            Dim EBOOKS_PRICE As Integer = CInt(Session("amount_ebook"))
+
+            Session.Remove("PROMOTION")
+            Session.Remove("BALANCE")
+            Session.Remove("customer_promotion")
+
+            ClassPromotion.BOOK_DATATABLE = BOOKS_SHOPPING
+            ClassPromotion.EBOOK_DATATABLE = EBOOKS_SHOPPING
+            ClassPromotion.BOOK_TOTAL = BOOKS_PRICE
+            ClassPromotion.EBOOK_TOTAL = EBOOKS_PRICE
+            datatable = ClassPromotion.CheckPromotion
+            If datatable.Rows.Count > 0 Then
+                Session("customer_promotion") = datatable
+            End If
         End If
     End Sub
 
-    Private Sub Class_GetData_PromotionFree()
-        Dim datatable As New DataTable
-        datatable = uFunction.getDataTable(uCon.conn, "SELECT buy_book , free_ebook FROM ebook_promotion WHERE status = 1 AND promotion = 2")
-        If datatable.Rows.Count > 0 Then
-            Session("free") = datatable.Rows(0).Item("free_ebook").ToString
-            Session("buy_book") = datatable.Rows(0).Item("buy_book").ToString
-            lblMsg1.Text = "Enjoy our special promotion Buy " + Session("buy_book").ToString + " Books get " + Session("free").ToString + " free eBook! "
-            If Not Session("discount") Is Nothing Then
-                lblMsg3.Text = "Enjoy our special combo promotions <br/>1.Buy " + Session("buy_ebook").ToString + " eBooks get " + Session("discount").ToString + "% discount !  <br/>2.Buy " + Session("buy_book").ToString + " Books get " + Session("free").ToString + " free eBook! "
-            End If
-        Else
-            Session("free") = Nothing
-            Session("buy_book") = Nothing
-            Session("credits") = Nothing
-            Class_clear_free()
-        End If
-    End Sub
+    'Private Sub Class_GetData_PromotionDiscount()
+    '    Dim datatable As New DataTable
+    '    datatable = uFunction.getDataTable(uCon.conn, "SELECT buy , discount FROM ebook_promotion WHERE status = 1 AND promotion = 1")
+    '    If datatable.Rows.Count > 0 Then
+    '        Session("discount") = CDbl(datatable.Rows(0).Item("discount")).ToString("##")
+    '        Session("buy_ebook") = datatable.Rows(0).Item("buy").ToString
+    '        lblMsg2.Text = "Enjoy our special promotion Buy " + Session("buy_ebook").ToString + " eBooks get " + Session("discount").ToString + "% discount! "
+    '    Else
+    '        Session("discount") = Nothing
+    '        Session("buy_ebook") = Nothing
+    '        Me.lbltxt_promotion.Visible = False
+    '        Me.lbldiscount.Visible = False
+    '        'If Me.IsPostBack Then
+    '            'Class_eBook_Recalculate()
+    '            'loadData()
+    '        'End If
+    '    End If
+    'End Sub
+
+    'Private Sub Class_GetData_PromotionFree()
+    '    Dim datatable As New DataTable
+    '    datatable = uFunction.getDataTable(uCon.conn, "SELECT buy_book , free_ebook FROM ebook_promotion WHERE status = 1 AND promotion = 2")
+    '    If datatable.Rows.Count > 0 Then
+    '        Session("free") = datatable.Rows(0).Item("free_ebook").ToString
+    '        Session("buy_book") = datatable.Rows(0).Item("buy_book").ToString
+    '        lblMsg1.Text = "Enjoy our special promotion Buy " + Session("buy_book").ToString + " Books get " + Session("free").ToString + " free eBook! "
+    '        If Not Session("discount") Is Nothing Then
+    '            lblMsg3.Text = "Enjoy our special combo promotions <br/>1.Buy " + Session("buy_ebook").ToString + " eBooks get " + Session("discount").ToString + "% discount !  <br/>2.Buy " + Session("buy_book").ToString + " Books get " + Session("free").ToString + " free eBook! "
+    '        End If
+    '    Else
+    '        Session("free") = Nothing
+    '        Session("buy_book") = Nothing
+    '        Session("credits") = Nothing
+    '        Class_clear_free()
+    '    End If
+    'End Sub
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.Title = ConfigurationManager.AppSettings("SiteTitle").ToString & "Shopping Cart ::"
         
         If Not Me.IsPostBack Then
-        Class_GetData_PromotionDiscount()
-        Class_GetData_PromotionFree()
-            Session("Promotions_List") = Nothing
+            'Class_GetData_PromotionDiscount()
+            'Class_GetData_PromotionFree()
+            'Session("Promotions_List") = Nothing
             loadData()
             Me.b_clear_cart.Attributes.Add("onclick", "return confirm('Do you want to Clear Cart?')")
         End If
-        If Me.IsPostBack Then
-        Promotions()
-        End If
+        'If Me.IsPostBack Then
+        '    Promotions()
+        'End If
     End Sub
 
     Private Sub loadData()
@@ -74,25 +112,25 @@ Partial Class shoppingCart_Internet
         Me.ebook_inCart.DataSource = Session("ebook_shopping")
         Me.ebook_inCart.DataBind()
 
-        If Session("In_Branch") Is Nothing And Session("jobber") Is Nothing Then
-            Session.Remove("ebook_promotion")
-        End If
+        'If Session("In_Branch") Is Nothing And Session("jobber") Is Nothing Then
+        '    Session.Remove("ebook_promotion")
+        'End If
 
-        If Not Session("ebook_promotion") Is Nothing Then
-            Dim datatable As DataTable = DirectCast(Session("ebook_promotion"), DataTable).Copy
-            If datatable.Rows.Count > 0 Then
-                Dim rowCount As Integer = 1
-                For Each dd As DataRow In datatable.Rows
-                    dd.Item("No") = rowCount.ToString
-                    rowCount = rowCount + 1
-                Next
-                Me.DatagridPromotion.DataSource = datatable
-                Me.DatagridPromotion.DataBind()
-            Else
-                Me.DatagridPromotion.DataSource = Session("ebook_promotion")
-                Me.DatagridPromotion.DataBind()
-            End If
-        End If
+        'If Not Session("ebook_promotion") Is Nothing Then
+        '    Dim datatable As DataTable = DirectCast(Session("ebook_promotion"), DataTable).Copy
+        '    If datatable.Rows.Count > 0 Then
+        '        Dim rowCount As Integer = 1
+        '        For Each dd As DataRow In datatable.Rows
+        '            dd.Item("No") = rowCount.ToString
+        '            rowCount = rowCount + 1
+        '        Next
+        '        Me.DatagridPromotion.DataSource = datatable
+        '        Me.DatagridPromotion.DataBind()
+        '    Else
+        '        Me.DatagridPromotion.DataSource = Session("ebook_promotion")
+        '        Me.DatagridPromotion.DataBind()
+        '    End If
+        'End If
 
         '/////////promptnow/////////
         If Me.ebook_inCart.Items.Count = 0 Then
@@ -172,7 +210,7 @@ Partial Class shoppingCart_Internet
         Else
             count_item = CDbl(Me.In_Branch.Items.Count.ToString) + CDbl(jobber.Items.Count.ToString) + CDbl(ebook_inCart.Items.Count.ToString)
             Me.lblStatus_Head.Text = "Your " + count_item.ToString + " item (s) in shopping cart."
-            Class_PromotionCheck()
+            'Class_PromotionCheck()
             Dim bookAmount As Integer = Class_ItemAmount_Book()
             Dim ebookAmount As Integer = Class_ItemAmout_eBook()
             Dim totalAmount As Integer = bookAmount + ebookAmount
@@ -181,6 +219,9 @@ Partial Class shoppingCart_Internet
             Me.lblus_all.Text = "(US$ " + CDbl(class_book_detail.callUsd(totalAmount)).ToString("#,###.##") + ")"
             Me.lblfinaltotal.Text = CDbl(totalAmount).ToString("#,###.00")
         End If
+
+        CheckPromotion()
+
     End Sub
 
     Private Sub in_branch_total()
@@ -246,8 +287,10 @@ Partial Class shoppingCart_Internet
             Session("ebook_shopping") = dt
             Session("original_total") = Nothing
             Session("amount_ebook") = Nothing
+            Session.Remove("ebook_promotion")
+            Session.Remove("customer_promotion")
         End If
-        Class_clear_free()
+        'Class_clear_free()
 
         loadData()
         ScriptManager.RegisterClientScriptBlock(Me.Page, Me.GetType, "Alert", "alert('Clear Cart is successful');", True)
@@ -342,36 +385,46 @@ Partial Class shoppingCart_Internet
     End Sub
 
     Protected Sub btn_proceed_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_proceed.Click
-        Class_GetData_PromotionFree()
+        'Class_GetData_PromotionFree()
         'Class_clear_free()
         Class_Book_Recalculate()
         Class_eBook_Recalculate()
-        Dim list As DataTable = class_book_detail.Class_listPromotion
-        Dim free As String = Session("free")
-        Dim credits As String = Session("credits")
+        'Dim list As DataTable = class_book_detail.Class_listPromotion
+        'Dim free As String = Session("free")
+        'Dim credits As String = Session("credits")
 
-        If CInt(free) - CInt(credits) > 0 Then
-            If list.Rows.Count > 0 And CInt(free) > 0 Then
-                Session("Promotions_List") = list
-                Dim buy_book_ As String = Session("buy_book")
-                Dim countQuantity As Integer = Class_ItemQuantity_Book()
-                If countQuantity >= CInt(buy_book_) Then
-                    Promotions()
-                    ModalPopupPromotion.Show()
-                Else
-                    If Not IsNothing(Request.Cookies("myCookie_user")) Then
-                        Response.Redirect("Customer_Order_Internet.aspx")
-                    Else
-                        Response.Redirect("Customer_Information_Internet.aspx")
-                    End If
-                End If
-            Else
-                If Not IsNothing(Request.Cookies("myCookie_user")) Then
-                    Response.Redirect("Customer_Order_Internet.aspx")
-                Else
-                    Response.Redirect("Customer_Information_Internet.aspx")
-                End If
-            End If
+        'If CInt(free) - CInt(credits) > 0 Then
+        '    If list.Rows.Count > 0 And CInt(free) > 0 Then
+        '        Session("Promotions_List") = list
+        '        Dim buy_book_ As String = Session("buy_book")
+        '        Dim countQuantity As Integer = Class_ItemQuantity_Book()
+        '        If countQuantity >= CInt(buy_book_) Then
+        '            Promotions()
+        '            ModalPopupPromotion.Show()
+        '        Else
+        '            If Not IsNothing(Request.Cookies("myCookie_user")) Then
+        '                Response.Redirect("Customer_Order_Internet.aspx")
+        '            Else
+        '                Response.Redirect("Customer_Information_Internet.aspx")
+        '            End If
+        '        End If
+        '    Else
+        '        If Not IsNothing(Request.Cookies("myCookie_user")) Then
+        '            Response.Redirect("Customer_Order_Internet.aspx")
+        '        Else
+        '            Response.Redirect("Customer_Information_Internet.aspx")
+        '        End If
+        '    End If
+        'Else
+        '    If Not IsNothing(Request.Cookies("myCookie_user")) Then
+        '        Response.Redirect("Customer_Order_Internet.aspx")
+        '    Else
+        '        Response.Redirect("Customer_Information_Internet.aspx")
+        '    End If
+        'End If
+
+        If Not Session("customer_promotion") Is Nothing Then
+            Response.Redirect("promotion_list.aspx")
         Else
             If Not IsNothing(Request.Cookies("myCookie_user")) Then
                 Response.Redirect("Customer_Order_Internet.aspx")
@@ -379,6 +432,7 @@ Partial Class shoppingCart_Internet
                 Response.Redirect("Customer_Information_Internet.aspx")
             End If
         End If
+
     End Sub
 
     Protected Sub Quantity_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs)
@@ -669,78 +723,78 @@ Partial Class shoppingCart_Internet
         Session("amount_ebook") = class_book_detail.amount_ebook
     End Sub
 
-    Private Sub Class_PromotionCheck()
-        Dim promotionBoolean As Integer = 0
-        Dim credits As String = ""
-        Dim free_ As String = ""
-        If Not Session("free") Is Nothing Then
-            free_ = Session("free")
-            Dim buy_book_ As String = Session("buy_book")
+    'Private Sub Class_PromotionCheck()
+    '    Dim promotionBoolean As Integer = 0
+    '    Dim credits As String = ""
+    '    Dim free_ As String = ""
+    '    If Not Session("free") Is Nothing Then
+    '        free_ = Session("free")
+    '        Dim buy_book_ As String = Session("buy_book")
 
-            Dim countQuantity As Integer = Class_ItemQuantity_Book()
-            If countQuantity >= CInt(buy_book_) Then
-                promotionBoolean = promotionBoolean + 1
-            Else
-                Class_clear_free()
-            End If
+    '        Dim countQuantity As Integer = Class_ItemQuantity_Book()
+    '        If countQuantity >= CInt(buy_book_) Then
+    '            promotionBoolean = promotionBoolean + 1
+    '        Else
+    '            Class_clear_free()
+    '        End If
 
-            If Session("credits") Is Nothing Then
-                Session("credits") = "0"
-                credits = Session("credits")
-            Else
-                credits = Session("credits")
-            End If
-        End If
+    '        If Session("credits") Is Nothing Then
+    '            Session("credits") = "0"
+    '            credits = Session("credits")
+    '        Else
+    '            credits = Session("credits")
+    '        End If
+    '    End If
 
-        If Not Session("discount") Is Nothing Then
-            Dim discount_ As String = Session("discount")
-            Dim buy_ebook_ As String = Session("buy_ebook")
-            Dim discountAmout_ As Double = CDbl(Session("original_total")) - CDbl(Session("amount_ebook"))
+    '    If Not Session("discount") Is Nothing Then
+    '        Dim discount_ As String = Session("discount")
+    '        Dim buy_ebook_ As String = Session("buy_ebook")
+    '        Dim discountAmout_ As Double = CDbl(Session("original_total")) - CDbl(Session("amount_ebook"))
 
-            Dim countQuantity As Integer = Class_ItemQuantity_eBook()
-            If countQuantity >= CInt(buy_ebook_) Then
-                lbldiscount.Text = CDbl(discountAmout_).ToString("#,###.00")
-                lbltxt_promotion.Text = "Promotion Discount (" + CInt(discount_).ToString + "%)"
-                lbltxt_promotion.Visible = True
-                lbldiscount.Visible = True
-                promotionBoolean = promotionBoolean + 2
-            Else
-                lbltxt_promotion.Visible = False
-                lbldiscount.Visible = False
-            End If
-        End If
+    '        Dim countQuantity As Integer = Class_ItemQuantity_eBook()
+    '        If countQuantity >= CInt(buy_ebook_) Then
+    '            lbldiscount.Text = CDbl(discountAmout_).ToString("#,###.00")
+    '            lbltxt_promotion.Text = "Promotion Discount (" + CInt(discount_).ToString + "%)"
+    '            lbltxt_promotion.Visible = True
+    '            lbldiscount.Visible = True
+    '            promotionBoolean = promotionBoolean + 2
+    '        Else
+    '            lbltxt_promotion.Visible = False
+    '            lbldiscount.Visible = False
+    '        End If
+    '    End If
 
-        If promotionBoolean = 1 Then
-            If CInt(free_) - CInt(credits) > 0 Then
-                ModalPopupPromotionMsg1.Show()
-            Else
-                Exit Sub
-            End If
-        End If
-        If promotionBoolean = 2 Then
-            ModalPopupPromotionMsg2.Show()
-        End If
-        If promotionBoolean = 3 Then
-            If CInt(free_) - CInt(credits) > 0 Then
-                ModalPopupPromotionMsg3.Show()
-            Else
-                ModalPopupPromotionMsg2.Show()
-            End If
-        End If
-    End Sub
+    '    If promotionBoolean = 1 Then
+    '        If CInt(free_) - CInt(credits) > 0 Then
+    '            ModalPopupPromotionMsg1.Show()
+    '        Else
+    '            Exit Sub
+    '        End If
+    '    End If
+    '    If promotionBoolean = 2 Then
+    '        ModalPopupPromotionMsg2.Show()
+    '    End If
+    '    If promotionBoolean = 3 Then
+    '        If CInt(free_) - CInt(credits) > 0 Then
+    '            ModalPopupPromotionMsg3.Show()
+    '        Else
+    '            ModalPopupPromotionMsg2.Show()
+    '        End If
+    '    End If
+    'End Sub
 
-    Private Function Class_ItemQuantity_Book() As Integer
-        Dim countQuantity As Integer = 0
-        For Each datagrids As DataGridItem In In_Branch.Items
-            Dim tbxquantity As TextBox = datagrids.FindControl("Quantity")
-            countQuantity = countQuantity + CInt(tbxquantity.Text)
-        Next
-        For Each datagrids As DataGridItem In jobber.Items
-            Dim tbxquantity As TextBox = datagrids.FindControl("Quantity_Jobber")
-            countQuantity = countQuantity + CInt(tbxquantity.Text)
-        Next
-        Return countQuantity
-    End Function
+    'Private Function Class_ItemQuantity_Book() As Integer
+    '    Dim countQuantity As Integer = 0
+    '    For Each datagrids As DataGridItem In In_Branch.Items
+    '        Dim tbxquantity As TextBox = datagrids.FindControl("Quantity")
+    '        countQuantity = countQuantity + CInt(tbxquantity.Text)
+    '    Next
+    '    For Each datagrids As DataGridItem In jobber.Items
+    '        Dim tbxquantity As TextBox = datagrids.FindControl("Quantity_Jobber")
+    '        countQuantity = countQuantity + CInt(tbxquantity.Text)
+    '    Next
+    '    Return countQuantity
+    'End Function
 
     Private Function Class_ItemAmount_Book() As Integer
         Dim bookAmount As Integer = 0
@@ -753,14 +807,14 @@ Partial Class shoppingCart_Internet
         Return bookAmount
     End Function
 
-    Private Function Class_ItemQuantity_eBook() As Integer
-        Dim countQuantity As Integer = 0
-        For Each datagrids As DataGridItem In ebook_inCart.Items
-            Dim tbxquantity As TextBox = datagrids.FindControl("Quantity_ebook")
-            countQuantity = countQuantity + CInt(tbxquantity.Text)
-        Next
-        Return countQuantity
-    End Function
+    'Private Function Class_ItemQuantity_eBook() As Integer
+    '    Dim countQuantity As Integer = 0
+    '    For Each datagrids As DataGridItem In ebook_inCart.Items
+    '        Dim tbxquantity As TextBox = datagrids.FindControl("Quantity_ebook")
+    '        countQuantity = countQuantity + CInt(tbxquantity.Text)
+    '    Next
+    '    Return countQuantity
+    'End Function
 
     Private Function Class_ItemAmout_eBook() As Integer
         Dim ebookAmount As Integer = 0
@@ -770,234 +824,234 @@ Partial Class shoppingCart_Internet
         Return ebookAmount
     End Function
 
-    Private Sub Promotions()
-        Dim free As String = Session("free")
-        Dim credits As String = Session("credits")
-        lblcredits.Text = CInt(CInt(free) - CInt(credits)).ToString
-        Class_listPromotion()
-    End Sub
+    'Private Sub Promotions()
+    '    Dim free As String = Session("free")
+    '    Dim credits As String = Session("credits")
+    '    lblcredits.Text = CInt(CInt(free) - CInt(credits)).ToString
+    '    Class_listPromotion()
+    'End Sub
 
-    Private Sub Class_listPromotion()
-        Dim datatable As New DataTable
+    'Private Sub Class_listPromotion()
+    '    Dim datatable As New DataTable
 
-        If Session("Promotions_List") Is Nothing Then
-            datatable = class_book_detail.Class_listPromotion
-            Session("Promotions_List") = datatable
-        Else
-            datatable = Session("Promotions_List")
-        End If
+    '    If Session("Promotions_List") Is Nothing Then
+    '        datatable = class_book_detail.Class_listPromotion
+    '        Session("Promotions_List") = datatable
+    '    Else
+    '        datatable = Session("Promotions_List")
+    '    End If
 
-        Me.Datagrid.DataSource = datatable
-        Me.Datagrid.DataBind()
-    End Sub
+    '    Me.Datagrid.DataSource = datatable
+    '    Me.Datagrid.DataBind()
+    'End Sub
 
-    Protected Sub Datagrid_ItemDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.DataGridItemEventArgs) Handles Datagrid.ItemDataBound
-        If e.Item.ItemType = ListItemType.AlternatingItem Or e.Item.ItemType = ListItemType.Item Then
-            Dim Book_Image As Image = e.Item.FindControl("Book_Image")
-            Dim lblBook_Image As Label = e.Item.FindControl("lblBook_Image")
-            Dim tbx_qty As TextBox = e.Item.FindControl("txt_qty")
+    'Protected Sub Datagrid_ItemDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.DataGridItemEventArgs) Handles Datagrid.ItemDataBound
+    '    If e.Item.ItemType = ListItemType.AlternatingItem Or e.Item.ItemType = ListItemType.Item Then
+    '        Dim Book_Image As Image = e.Item.FindControl("Book_Image")
+    '        Dim lblBook_Image As Label = e.Item.FindControl("lblBook_Image")
+    '        Dim tbx_qty As TextBox = e.Item.FindControl("txt_qty")
 
-            tbx_qty.Attributes.Add("Onkeypress", "num_only()")
-            tbx_qty.Attributes.Add("Onmousedown", "return noCopyMouse(event);")
-            tbx_qty.Attributes.Add("Onkeydown", "return noCopyKey(event);")
-            Dim url_image As String = lblBook_Image.Text
-            Dim part1 As String = url_image.Substring(0, 3)
-            Dim part2 As String = url_image.Substring(3, 3)
-            Dim part3 As String = url_image.Substring(6, 3)
-            lblBook_Image.Text = (part1 + "/" + part2 + "/" + part3 + "/" + url_image + ".jpg").Trim
-            Dim _Utility As New clsUtility
-            Book_Image.ImageUrl = _Utility.GetImagePath_eBook(lblBook_Image.Text.Trim)
-        End If
-    End Sub
+    '        tbx_qty.Attributes.Add("Onkeypress", "num_only()")
+    '        tbx_qty.Attributes.Add("Onmousedown", "return noCopyMouse(event);")
+    '        tbx_qty.Attributes.Add("Onkeydown", "return noCopyKey(event);")
+    '        Dim url_image As String = lblBook_Image.Text
+    '        Dim part1 As String = url_image.Substring(0, 3)
+    '        Dim part2 As String = url_image.Substring(3, 3)
+    '        Dim part3 As String = url_image.Substring(6, 3)
+    '        lblBook_Image.Text = (part1 + "/" + part2 + "/" + part3 + "/" + url_image + ".jpg").Trim
+    '        Dim _Utility As New clsUtility
+    '        Book_Image.ImageUrl = _Utility.GetImagePath_eBook(lblBook_Image.Text.Trim)
+    '    End If
+    'End Sub
 
-    Protected Sub btn_add_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-        Class_GetData_PromotionFree()
-        Class_client_nation()
-        Dim sqlDB As SqlDb = New SqlDb
-        Dim datatable_old As New DataTable
-        Dim datatable_new As New DataTable
-        Dim temp As New DataTable
-        Dim free As String = Session("free")
-        Dim credits As String = Session("credits")
-        Dim country As String = Session("client_nation")
-        Dim quantity As String = ""
-        Dim sqlstr As String = ""
-        Dim balance As Integer = 0
+    'Protected Sub btn_add_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    '    Class_GetData_PromotionFree()
+    '    Class_client_nation()
+    '    Dim sqlDB As SqlDb = New SqlDb
+    '    Dim datatable_old As New DataTable
+    '    Dim datatable_new As New DataTable
+    '    Dim temp As New DataTable
+    '    Dim free As String = Session("free")
+    '    Dim credits As String = Session("credits")
+    '    Dim country As String = Session("client_nation")
+    '    Dim quantity As String = ""
+    '    Dim sqlstr As String = ""
+    '    Dim balance As Integer = 0
 
-        '/////////find row////////////
-        Dim datatable As DataTable = DirectCast(Session("Promotions_List"), DataTable)
-        Dim tablecells As TableCell = sender.Parent
-        Dim datagriditems As DataGridItem = tablecells.Parent
-        Dim datarows As DataRow = datatable.Rows(datagriditems.ItemIndex)
-        Dim eBook_ID As String = datarows("ebook_id").ToString
+    '    '/////////find row////////////
+    '    Dim datatable As DataTable = DirectCast(Session("Promotions_List"), DataTable)
+    '    Dim tablecells As TableCell = sender.Parent
+    '    Dim datagriditems As DataGridItem = tablecells.Parent
+    '    Dim datarows As DataRow = datatable.Rows(datagriditems.ItemIndex)
+    '    Dim eBook_ID As String = datarows("ebook_id").ToString
 
-        '/////// check textbox of quantity////////
-        Dim txt_qty As TextBox = datagriditems.FindControl("txt_qty")
-        If txt_qty.Text.Trim = "" Or txt_qty.Text.Trim = "0" Then
-            quantity = "1"
-        Else
-            quantity = txt_qty.Text.Trim
-        End If
-        balance = CInt(quantity) + CInt(credits)
+    '    '/////// check textbox of quantity////////
+    '    Dim txt_qty As TextBox = datagriditems.FindControl("txt_qty")
+    '    If txt_qty.Text.Trim = "" Or txt_qty.Text.Trim = "0" Then
+    '        quantity = "1"
+    '    Else
+    '        quantity = txt_qty.Text.Trim
+    '    End If
+    '    balance = CInt(quantity) + CInt(credits)
 
-        If balance > CInt(free) Then
-            balance = CInt(free) - CInt(credits)
-            Session("credits") = CInt(free)
-            quantity = balance.ToString
-        Else
-            Session("credits") = balance
-        End If
-       
-        '//////////sql///////////
-        Try
-            sqlstr &= "SELECT "
-            sqlstr &= " ebook.isbn_13 "
-            sqlstr &= " , ebook.bookid as ebook_id "
-            sqlstr &= " , ebook.book_title "
-            sqlstr &= " , ebook.page "
-            sqlstr &= " , ebook.supplier "
-            sqlstr &= " , currency.exchange_rate as exchange"
-            sqlstr &= " , currency.exchange_rate_internet as exchange_internet"
-            sqlstr &= " , ebook.discount"
-            sqlstr &= " , ebook_type.type as format"
-            sqlstr &= " , ebook.format_type "
-            sqlstr &= " , isnull(ebook.size,'-') as size "
-            sqlstr &= " , '" + quantity + "' as quantity "
-            sqlstr &= " , '" + country + "' as country "
-            sqlstr &= " , (selling_price*exchange_rate) as Selling_price "
-            '//////////from//////////
-            sqlstr &= " FROM "
-            sqlstr &= " (select distinct isbn_13 , book_title , page_qty as page , format_type , bookid , cast(file_size as varchar) as size "
-            sqlstr &= " ,supplier_code as supplier , discount , convert(numeric(13,2), selling_price) as selling_price "
-            sqlstr &= " from ebook_store where bookid = " + eBook_ID + " "
-            sqlstr &= " and (status = 'active' or status is null)) ebook "
-            '//////////left join//////////
-            sqlstr &= " left join ( select distinct currency_code , org_indent_code "
-            sqlstr &= " from tbm_syst_organizeindent ) as organize "
-            sqlstr &= " on organize.org_indent_code = ebook.supplier "
+    '    If balance > CInt(free) Then
+    '        balance = CInt(free) - CInt(credits)
+    '        Session("credits") = CInt(free)
+    '        quantity = balance.ToString
+    '    Else
+    '        Session("credits") = balance
+    '    End If
 
-            sqlstr &= " left join ( select distinct exchange_rate , currency_code "
-            sqlstr &= " , exchange_rate_internet from tbm_syst_currency ) as currency "
-            sqlstr &= " on organize.currency_code = currency.currency_code "
+    '    '//////////sql///////////
+    '    Try
+    '        sqlstr &= "SELECT "
+    '        sqlstr &= " ebook.isbn_13 "
+    '        sqlstr &= " , ebook.bookid as ebook_id "
+    '        sqlstr &= " , ebook.book_title "
+    '        sqlstr &= " , ebook.page "
+    '        sqlstr &= " , ebook.supplier "
+    '        sqlstr &= " , currency.exchange_rate as exchange"
+    '        sqlstr &= " , currency.exchange_rate_internet as exchange_internet"
+    '        sqlstr &= " , ebook.discount"
+    '        sqlstr &= " , ebook_type.type as format"
+    '        sqlstr &= " , ebook.format_type "
+    '        sqlstr &= " , isnull(ebook.size,'-') as size "
+    '        sqlstr &= " , '" + quantity + "' as quantity "
+    '        sqlstr &= " , '" + country + "' as country "
+    '        sqlstr &= " , (selling_price*exchange_rate) as Selling_price "
+    '        '//////////from//////////
+    '        sqlstr &= " FROM "
+    '        sqlstr &= " (select distinct isbn_13 , book_title , page_qty as page , format_type , bookid , cast(file_size as varchar) as size "
+    '        sqlstr &= " ,supplier_code as supplier , discount , convert(numeric(13,2), selling_price) as selling_price "
+    '        sqlstr &= " from ebook_store where bookid = " + eBook_ID + " "
+    '        sqlstr &= " and (status = 'active' or status is null)) ebook "
+    '        '//////////left join//////////
+    '        sqlstr &= " left join ( select distinct currency_code , org_indent_code "
+    '        sqlstr &= " from tbm_syst_organizeindent ) as organize "
+    '        sqlstr &= " on organize.org_indent_code = ebook.supplier "
 
-            sqlstr &= " left join ebook_type on ebook.format_type = ebook_type.formatid "
+    '        sqlstr &= " left join ( select distinct exchange_rate , currency_code "
+    '        sqlstr &= " , exchange_rate_internet from tbm_syst_currency ) as currency "
+    '        sqlstr &= " on organize.currency_code = currency.currency_code "
 
-            datatable_new = sqlDB.GetDataTable(sqlstr)
-        Catch ex As Exception
-            Throw (New Exception("promotion new session :" + ex.Message))
-        End Try
+    '        sqlstr &= " left join ebook_type on ebook.format_type = ebook_type.formatid "
 
-        '////////store data//////////
+    '        datatable_new = sqlDB.GetDataTable(sqlstr)
+    '    Catch ex As Exception
+    '        Throw (New Exception("promotion new session :" + ex.Message))
+    '    End Try
 
-        datatable = New DataTable
-        Dim datarow As DataRow
-        datatable.Columns.Add("No", System.Type.GetType("System.String"))
-        datatable.Columns.Add("ISBN_13", System.Type.GetType("System.String"))
-        datatable.Columns.Add("eBook_ID", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Book_Title", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Selling_Price", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Quantity", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Items_Amount", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Supplier", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Exchange", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Exchange_Internet", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Discount", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Format", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Country", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Format_Type", System.Type.GetType("System.String"))
-        datatable.Columns.Add("Size", System.Type.GetType("System.String"))
+    '    '////////store data//////////
 
-        If Session("ebook_promotion") Is Nothing Then
-            datarow = datatable.NewRow()
-            datarow("No") = "-"
-            datarow("ISBN_13") = datatable_new.Rows(0).Item("ISBN_13").ToString
-            datarow("eBook_ID") = datatable_new.Rows(0).Item("eBook_ID").ToString
-            datarow("Book_Title") = datatable_new.Rows(0).Item("Book_Title").ToString
-            datarow("Selling_Price") = CDbl(datatable_new.Rows(0).Item("Selling_Price")).ToString("#,###.####")
-            datarow("Quantity") = datatable_new.Rows(0).Item("Quantity").ToString
-            datarow("Items_Amount") = "0"
-            datarow("Supplier") = datatable_new.Rows(0).Item("Supplier").ToString
-            datarow("Exchange") = datatable_new.Rows(0).Item("Exchange").ToString
-            datarow("Exchange_Internet") = datatable_new.Rows(0).Item("Exchange_Internet").ToString
-            datarow("Discount") = "0"
-            datarow("Format") = datatable_new.Rows(0).Item("Format").ToString
-            datarow("Format_Type") = datatable_new.Rows(0).Item("Format_Type").ToString
-            datarow("Country") = datatable_new.Rows(0).Item("Country").ToString
-            datarow("Size") = datatable_new.Rows(0).Item("Size").ToString
-            If Not datarow("Size") = "-" Then
-                datarow("Size") = CDbl(datatable_new.Rows(0).Item("Size")).ToString("#,###.####")
-            End If
-            datatable.Rows.Add(datarow)
-        Else
-            datatable_old = Session("ebook_promotion")
-            For Each datarowsOld As DataRow In datatable_old.Rows
-                datarow = datatable.NewRow()
-                datarow("No") = "-"
-                datarow("ISBN_13") = datarowsOld.Item("ISBN_13").ToString
-                datarow("eBook_ID") = datarowsOld.Item("eBook_ID").ToString
-                datarow("Book_Title") = datarowsOld.Item("Book_Title").ToString
-                datarow("Selling_Price") = CDbl(datarowsOld.Item("Selling_Price")).ToString("#,###")
-                datarow("Quantity") = datarowsOld.Item("Quantity").ToString
-                datarow("Items_Amount") = (CDbl(datarow("Selling_Price")) * CDbl(datarow("Quantity"))).ToString("#,###.####")
-                datarow("Supplier") = datarowsOld.Item("Supplier").ToString
-                datarow("Exchange") = datarowsOld.Item("Exchange").ToString
-                datarow("Exchange_Internet") = datarowsOld.Item("Exchange_Internet").ToString
-                datarow("Discount") = "0"
-                datarow("Format") = datarowsOld.Item("Format").ToString
-                datarow("Format_Type") = datarowsOld.Item("Format_Type").ToString
-                datarow("Country") = datarowsOld.Item("Country").ToString
-                datarow("Size") = datarowsOld.Item("Size").ToString
-                datatable.Rows.Add(datarow)
-            Next
-            Dim dataDup As String = "N"
-            Dim eBooks_ID As String = datatable_new.Rows(0).Item("eBook_ID").ToString
-            For Each datarowsData As DataRow In datatable.Select("eBook_ID = '" + eBooks_ID + "'")
-                datarowsData.Item("Quantity") = (CInt(datarowsData.Item("Quantity")) + CInt(datatable_new.Rows(0).Item("Quantity"))).ToString
-                datarowsData.Item("Items_Amount") = (CDbl(datarowsData.Item("Selling_Price")) * CDbl(datarowsData.Item("Quantity"))).ToString("#,###.####")
-                dataDup = "Y"
-            Next
-            If dataDup = "N" Then
-                datarow = datatable.NewRow()
-                datarow("No") = "-"
-                datarow("ISBN_13") = datatable_new.Rows(0).Item("ISBN_13").ToString
-                datarow("eBook_ID") = datatable_new.Rows(0).Item("eBook_ID").ToString
-                datarow("Book_Title") = datatable_new.Rows(0).Item("Book_Title").ToString
-                datarow("Selling_Price") = CDbl(datatable_new.Rows(0).Item("Selling_Price")).ToString("#,###.####")
-                datarow("Quantity") = datatable_new.Rows(0).Item("Quantity").ToString
-                datarow("Items_Amount") = (CDbl(datarow("Selling_Price")) * CDbl(datarow("Quantity"))).ToString("#,###.####")
-                datarow("Supplier") = datatable_new.Rows(0).Item("Supplier").ToString
-                datarow("Exchange") = datatable_new.Rows(0).Item("Exchange").ToString
-                datarow("Exchange_Internet") = datatable_new.Rows(0).Item("Exchange_Internet").ToString
-                datarow("Discount") = "0"
-                datarow("Format") = datatable_new.Rows(0).Item("Format").ToString
-                datarow("Format_Type") = datatable_new.Rows(0).Item("Format_Type").ToString
-                datarow("Country") = datatable_new.Rows(0).Item("Country").ToString
-                datarow("Size") = datatable_new.Rows(0).Item("Size").ToString
-                If Not datarow("Size") = "-" Then
-                    datarow("Size") = CDbl(datatable_new.Rows(0).Item("Size")).ToString("#,###.####")
-                End If
-                datatable.Rows.Add(datarow)
-            End If
-        End If
+    '    datatable = New DataTable
+    '    Dim datarow As DataRow
+    '    datatable.Columns.Add("No", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("ISBN_13", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("eBook_ID", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Book_Title", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Selling_Price", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Quantity", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Items_Amount", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Supplier", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Exchange", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Exchange_Internet", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Discount", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Format", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Country", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Format_Type", System.Type.GetType("System.String"))
+    '    datatable.Columns.Add("Size", System.Type.GetType("System.String"))
 
-        Session("ebook_promotion") = datatable
-        free = Session("free")
-        credits = Session("credits")
+    '    If Session("ebook_promotion") Is Nothing Then
+    '        datarow = datatable.NewRow()
+    '        datarow("No") = "-"
+    '        datarow("ISBN_13") = datatable_new.Rows(0).Item("ISBN_13").ToString
+    '        datarow("eBook_ID") = datatable_new.Rows(0).Item("eBook_ID").ToString
+    '        datarow("Book_Title") = datatable_new.Rows(0).Item("Book_Title").ToString
+    '        datarow("Selling_Price") = CDbl(datatable_new.Rows(0).Item("Selling_Price")).ToString("#,###.####")
+    '        datarow("Quantity") = datatable_new.Rows(0).Item("Quantity").ToString
+    '        datarow("Items_Amount") = "0"
+    '        datarow("Supplier") = datatable_new.Rows(0).Item("Supplier").ToString
+    '        datarow("Exchange") = datatable_new.Rows(0).Item("Exchange").ToString
+    '        datarow("Exchange_Internet") = datatable_new.Rows(0).Item("Exchange_Internet").ToString
+    '        datarow("Discount") = "0"
+    '        datarow("Format") = datatable_new.Rows(0).Item("Format").ToString
+    '        datarow("Format_Type") = datatable_new.Rows(0).Item("Format_Type").ToString
+    '        datarow("Country") = datatable_new.Rows(0).Item("Country").ToString
+    '        datarow("Size") = datatable_new.Rows(0).Item("Size").ToString
+    '        If Not datarow("Size") = "-" Then
+    '            datarow("Size") = CDbl(datatable_new.Rows(0).Item("Size")).ToString("#,###.####")
+    '        End If
+    '        datatable.Rows.Add(datarow)
+    '    Else
+    '        datatable_old = Session("ebook_promotion")
+    '        For Each datarowsOld As DataRow In datatable_old.Rows
+    '            datarow = datatable.NewRow()
+    '            datarow("No") = "-"
+    '            datarow("ISBN_13") = datarowsOld.Item("ISBN_13").ToString
+    '            datarow("eBook_ID") = datarowsOld.Item("eBook_ID").ToString
+    '            datarow("Book_Title") = datarowsOld.Item("Book_Title").ToString
+    '            datarow("Selling_Price") = CDbl(datarowsOld.Item("Selling_Price")).ToString("#,###")
+    '            datarow("Quantity") = datarowsOld.Item("Quantity").ToString
+    '            datarow("Items_Amount") = (CDbl(datarow("Selling_Price")) * CDbl(datarow("Quantity"))).ToString("#,###.####")
+    '            datarow("Supplier") = datarowsOld.Item("Supplier").ToString
+    '            datarow("Exchange") = datarowsOld.Item("Exchange").ToString
+    '            datarow("Exchange_Internet") = datarowsOld.Item("Exchange_Internet").ToString
+    '            datarow("Discount") = "0"
+    '            datarow("Format") = datarowsOld.Item("Format").ToString
+    '            datarow("Format_Type") = datarowsOld.Item("Format_Type").ToString
+    '            datarow("Country") = datarowsOld.Item("Country").ToString
+    '            datarow("Size") = datarowsOld.Item("Size").ToString
+    '            datatable.Rows.Add(datarow)
+    '        Next
+    '        Dim dataDup As String = "N"
+    '        Dim eBooks_ID As String = datatable_new.Rows(0).Item("eBook_ID").ToString
+    '        For Each datarowsData As DataRow In datatable.Select("eBook_ID = '" + eBooks_ID + "'")
+    '            datarowsData.Item("Quantity") = (CInt(datarowsData.Item("Quantity")) + CInt(datatable_new.Rows(0).Item("Quantity"))).ToString
+    '            datarowsData.Item("Items_Amount") = (CDbl(datarowsData.Item("Selling_Price")) * CDbl(datarowsData.Item("Quantity"))).ToString("#,###.####")
+    '            dataDup = "Y"
+    '        Next
+    '        If dataDup = "N" Then
+    '            datarow = datatable.NewRow()
+    '            datarow("No") = "-"
+    '            datarow("ISBN_13") = datatable_new.Rows(0).Item("ISBN_13").ToString
+    '            datarow("eBook_ID") = datatable_new.Rows(0).Item("eBook_ID").ToString
+    '            datarow("Book_Title") = datatable_new.Rows(0).Item("Book_Title").ToString
+    '            datarow("Selling_Price") = CDbl(datatable_new.Rows(0).Item("Selling_Price")).ToString("#,###.####")
+    '            datarow("Quantity") = datatable_new.Rows(0).Item("Quantity").ToString
+    '            datarow("Items_Amount") = (CDbl(datarow("Selling_Price")) * CDbl(datarow("Quantity"))).ToString("#,###.####")
+    '            datarow("Supplier") = datatable_new.Rows(0).Item("Supplier").ToString
+    '            datarow("Exchange") = datatable_new.Rows(0).Item("Exchange").ToString
+    '            datarow("Exchange_Internet") = datatable_new.Rows(0).Item("Exchange_Internet").ToString
+    '            datarow("Discount") = "0"
+    '            datarow("Format") = datatable_new.Rows(0).Item("Format").ToString
+    '            datarow("Format_Type") = datatable_new.Rows(0).Item("Format_Type").ToString
+    '            datarow("Country") = datatable_new.Rows(0).Item("Country").ToString
+    '            datarow("Size") = datatable_new.Rows(0).Item("Size").ToString
+    '            If Not datarow("Size") = "-" Then
+    '                datarow("Size") = CDbl(datatable_new.Rows(0).Item("Size")).ToString("#,###.####")
+    '            End If
+    '            datatable.Rows.Add(datarow)
+    '        End If
+    '    End If
 
-        If credits >= free Then
-            ModalPopupPromotionThankyouMsg.Show()
-        Else
-            ModalPopupPromotionGetmoreMsg.Show()
-        End If
-    End Sub
+    '    Session("ebook_promotion") = datatable
+    '    free = Session("free")
+    '    credits = Session("credits")
 
-    Protected Sub btn_next_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_next.Click, btn_cancel.Click
-        If Not IsNothing(Request.Cookies("myCookie_user")) Then
-            Response.Redirect("Customer_Order_Internet.aspx")
-        Else
-            Response.Redirect("Customer_Information_Internet.aspx")
-        End If
-    End Sub
+    '    If credits >= free Then
+    '        ModalPopupPromotionThankyouMsg.Show()
+    '    Else
+    '        ModalPopupPromotionGetmoreMsg.Show()
+    '    End If
+    'End Sub
+
+    'Protected Sub btn_next_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_next.Click, btn_cancel.Click
+    '    If Not IsNothing(Request.Cookies("myCookie_user")) Then
+    '        Response.Redirect("Customer_Order_Internet.aspx")
+    '    Else
+    '        Response.Redirect("Customer_Information_Internet.aspx")
+    '    End If
+    'End Sub
 
     Private Sub Class_client_nation()
         If Session("client_nation") Is Nothing Then
@@ -1007,45 +1061,45 @@ Partial Class shoppingCart_Internet
         End If
     End Sub
 
-    Private Sub Class_clear_free()
-        Session.Remove("credits")
-        If Not Session("ebook_promotion") Is Nothing Then
-            Dim dt As DataTable = Session("ebook_promotion")
-            dt.Clear()
-            Session("ebook_promotion") = dt
-        End If
-    End Sub
+    'Private Sub Class_clear_free()
+    '    Session.Remove("credits")
+    '    If Not Session("ebook_promotion") Is Nothing Then
+    '        Dim dt As DataTable = Session("ebook_promotion")
+    '        dt.Clear()
+    '        Session("ebook_promotion") = dt
+    '    End If
+    'End Sub
 
-    Private Sub Class_callPopup()
-        Dim free As String = Session("free")
-        Dim credits As String = Session("credits")
-        lblcredits.Text = CInt(CInt(free) - CInt(credits)).ToString
-        ModalPopupPromotion.Show()
-    End Sub
+    'Private Sub Class_callPopup()
+    '    Dim free As String = Session("free")
+    '    Dim credits As String = Session("credits")
+    '    lblcredits.Text = CInt(CInt(free) - CInt(credits)).ToString
+    '    ModalPopupPromotion.Show()
+    'End Sub
 
-    Protected Sub btn_alertThankClose_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_alertThankClose.Click
-        If Not IsNothing(Request.Cookies("myCookie_user")) Then
-            Response.Redirect("Customer_Order_Internet.aspx")
-        Else
-            Response.Redirect("Customer_Information_Internet.aspx")
-        End If
-    End Sub
+    'Protected Sub btn_alertThankClose_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_alertThankClose.Click
+    '    If Not IsNothing(Request.Cookies("myCookie_user")) Then
+    '        Response.Redirect("Customer_Order_Internet.aspx")
+    '    Else
+    '        Response.Redirect("Customer_Information_Internet.aspx")
+    '    End If
+    'End Sub
 
-    Protected Sub btn_alertMoreClose_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_alertMoreClose.Click
-        ModalPopupPromotionGetmoreMsg.Hide()
-        Class_callPopup()
-    End Sub
+    'Protected Sub btn_alertMoreClose_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_alertMoreClose.Click
+    '    ModalPopupPromotionGetmoreMsg.Hide()
+    '    Class_callPopup()
+    'End Sub
 
-    Protected Sub btn_closeMsg1_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_closeMsg1.Click
-        ModalPopupPromotionMsg1.Hide()
-    End Sub
+    'Protected Sub btn_closeMsg1_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_closeMsg1.Click
+    '    ModalPopupPromotionMsg1.Hide()
+    'End Sub
 
-    Protected Sub btn_closeMsg2_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_closeMsg2.Click
-        ModalPopupPromotionMsg2.Hide()
-    End Sub
+    'Protected Sub btn_closeMsg2_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_closeMsg2.Click
+    '    ModalPopupPromotionMsg2.Hide()
+    'End Sub
 
-    Protected Sub btn_closeMsg3_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_closeMsg3.Click
-        ModalPopupPromotionMsg3.Hide()
-    End Sub
+    'Protected Sub btn_closeMsg3_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btn_closeMsg3.Click
+    '    ModalPopupPromotionMsg3.Hide()
+    'End Sub
 
 End Class

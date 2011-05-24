@@ -1453,7 +1453,9 @@ Partial Class ebook_detail
 
         sql &= " SELECT "
         sql &= " case search.source when 'Asiabooks' then ROUND(convert(numeric(18,4),search.selling),0) "
-        sql &= " else ROUND(convert(numeric(18,4),(search.selling * isnull(search.exchange_rate,0))),0) end as selling_price "
+        sql &= " else ROUND(convert(numeric(18,4),(search.selling * isnull(search.exchange_rate,0))) - "
+        sql &= " convert(numeric(18,4),(search.selling * isnull(search.exchange_rate,0) * (search.ecom_discount)) / 100),0) "
+        sql &= " end as selling_price "
 
         sql &= " , search.ebook_id , search.isbn_13 , search.book_title , search.author , search.publisher_name "
         sql &= " , search.image , search.source as supplier , search.discount , search.ebook_format as format , search.format_type "
@@ -1475,6 +1477,7 @@ Partial Class ebook_detail
         sql &= " , case when ebook.synopsis is null then '-' else ebook.synopsis end as synopsis "
         sql &= " , convert(numeric(18,4) , ebook.price_org) as selling , ebook.isbn_10 as image , ebook.format_type "
         sql &= " , '0' as discount , currency.exchange_rate , currency.exchange_rate_internet as exchange_internet , type.type as ebook_format "
+        sql &= " , isnull(ebook.discount_sp,0) as ecom_discount "
 
         sql &= " from ebook_store ebook with (nolock) "
         sql &= " , tbm_syst_organizeindent organize with (nolock) "
@@ -1512,7 +1515,7 @@ Partial Class ebook_detail
             class_book_detail.From_ebook = "ebook"
             class_book_detail.Recalcuate()
             Session("ebook_shopping") = class_book_detail.dataCart
-            Session("original_total") = class_book_detail.original_total
+            'Session("original_total") = class_book_detail.original_total
             Session("amount_ebook") = class_book_detail.amount_ebook
         Else
             Dim dataSession As DataTable = Session("ebook_shopping")
@@ -1539,7 +1542,7 @@ Partial Class ebook_detail
             class_book_detail.From_ebook = "ebook"
             class_book_detail.Recalcuate()
             Session("ebook_shopping") = class_book_detail.dataCart
-            Session("original_total") = class_book_detail.original_total
+            'Session("original_total") = class_book_detail.original_total
             Session("amount_ebook") = class_book_detail.amount_ebook
         End If
         Response.Redirect("shoppingCart_Internet.aspx")

@@ -283,6 +283,7 @@ Partial Class Advanced_Search
                 Dim img_btn6 As ImageButton = e.Item.FindControl("btn6")
                 Dim img_btn7 As ImageButton = e.Item.FindControl("btn7")
                 Dim img_btn8 As ImageButton = e.Item.FindControl("btn8")
+                Dim img_btn9 As ImageButton = e.Item.FindControl("btn9")
                 Dim lbltxt_format As Label = e.Item.FindControl("lbltxt_format")
                 Dim isbn As String = lblisbn.Text
                 lnkavailable.Visible = False
@@ -317,8 +318,9 @@ Partial Class Advanced_Search
                 '///// show format /////
                 If hdd_type.Value = "ebook" Or hdd_type.Value = "1" Then
                     lbltxt_format.Visible = True
-                    Dim format_name() As String = {"GUY", "DRM-PDF", "PDF", "DRM-EPUB", "EPUB", "LIT", "MP3", "PDB", "MOBI"}
-                    Dim url_image(8) As String
+
+                    Dim format_name() As String = {"GUY", "DRM-PDF", "PDF", "DRM-EPUB", "EPUB", "LIT", "MP3", "PDB", "MOBI", "ASB"}
+                    Dim url_image(10) As String
                     url_image(0) = "GUY"
                     url_image(1) = "~/images/ebook/epdf.gif"
                     url_image(2) = "~/images/ebook/pdf.gif"
@@ -328,6 +330,7 @@ Partial Class Advanced_Search
                     url_image(6) = "~/images/ebook/mp3.gif"
                     url_image(7) = "~/images/ebook/pdb.gif"
                     url_image(8) = "~/images/ebook/pdb.gif"
+                    url_image(9) = "~/images/ebook/asiabook.gif"
                     Dim array() As String = hdd_ebook_format.Value.Split(",")
                     For i = 0 To array.Length - 1
                         If array(i) <> "" Then
@@ -386,6 +389,13 @@ Partial Class Advanced_Search
                                 img_btn8.PostBackUrl = "~/ebook_detail.aspx?code=" + isbn + "&format=" + array(i) + ""
                                 img_btn8.ImageUrl = url_image(CInt(array(i)))
                                 img_btn8.Visible = True
+                            End If
+                            If i = 8 Then
+                                img_btn9.Attributes.Add("alt", "CLICK HERE TO VIEW DETAIL OF " + format_name(CInt(array(i))))
+                                img_btn9.Attributes.Add("title", "CLICK HERE TO VIEW DETAIL OF " + format_name(CInt(array(i))))
+                                img_btn9.PostBackUrl = "~/ebook_detail.aspx?code=" + isbn + "&format=" + array(i) + ""
+                                img_btn9.ImageUrl = url_image(CInt(array(i)))
+                                img_btn9.Visible = True
                             End If
                         End If
                     Next

@@ -266,7 +266,7 @@ Out of stock but available on special order</TD>
 </asp:TemplateColumn>
 
 <asp:TemplateColumn HeaderText="ID" SortExpression="Book_ID" ItemStyle-HorizontalAlign="Left" Visible="false"><ItemTemplate>
-<asp:Label style="TEXT-ALIGN: left" id="lbl_Book_ID" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"eBook_ID") %>'></asp:Label> 
+<asp:Label style="TEXT-ALIGN: left" id="lbl_Book_ID" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"Book_ID") %>'></asp:Label> 
 </ItemTemplate>
 <HeaderStyle Width="30%"></HeaderStyle>
 

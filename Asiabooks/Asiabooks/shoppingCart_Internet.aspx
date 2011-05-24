@@ -674,7 +674,6 @@
                                 </table>
                                 <br />
                             </asp:Panel>
-                            <%--////////////////promptnow end//////////////////--%>
                             <asp:UpdateProgress id = "UpdateProgress1" runat = "server"><ProgressTemplate>
                             <asp:Image id = "Image1" runat = "server" ImageUrl = "~/images/loading.gif"></asp:Image><br />Loading..</ProgressTemplate>
                             </asp:UpdateProgress>
@@ -711,7 +710,7 @@
             </table>
         </contenttemplate>
     </asp:UpdatePanel>
-    <asp:ModalPopupExtender ID="ModalPopupPromotion" 
+    <%--<asp:ModalPopupExtender ID="ModalPopupPromotion" 
         TargetControlID="LinkButton" PopupControlID="panel_promotion"
         runat="server" BackgroundCssClass="ModelBackground" >
     </asp:ModalPopupExtender>
@@ -1046,5 +1045,5 @@
     <asp:LinkButton ID="LinkButton2" runat="server" style="display:none">LinkButton</asp:LinkButton>
     <asp:LinkButton ID="LinkButton3" runat="server" style="display:none">LinkButton</asp:LinkButton>
     <asp:LinkButton ID="LinkButton4" runat="server" style="display:none">LinkButton</asp:LinkButton>
-    <asp:LinkButton ID="LinkButton5" runat="server" style="display:none">LinkButton</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton5" runat="server" style="display:none">LinkButton</asp:LinkButton>--%>
 </asp:Content>

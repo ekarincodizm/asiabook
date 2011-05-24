@@ -3,7 +3,7 @@
 <%@ Register Assembly="MycustomDG" Namespace="MycustomDG" TagPrefix="Saifi" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:Panel ID="PanelFocus" runat="server" DefaultButton="btnSearch">
+<asp:Panel ID="PanelFocus" runat="server" DefaultButton="btnSearch">
 <table cellpadding="0" cellspacing="0" style="width: 100%">
 <tr>
     <td style="width: 15%; height: 13px;"></td>
@@ -205,6 +205,7 @@
                                 &nbsp;<asp:ImageButton ID="btn6" runat="server" Visible="false" />
                                 &nbsp;<asp:ImageButton ID="btn7" runat="server" Visible="false" />
                                 &nbsp;<asp:ImageButton ID="btn8" runat="server" Visible="false" />
+                                &nbsp;<asp:ImageButton ID="btn9" runat="server" Visible="false" />
                                 
                                 <asp:HiddenField ID="hdd_type" runat="server" 
                                     Value='<%# Eval("Book_Type") %>' />

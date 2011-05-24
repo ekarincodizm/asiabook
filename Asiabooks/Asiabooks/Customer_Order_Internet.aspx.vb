@@ -188,8 +188,8 @@ Partial Class Customer_Order_Internet
             End If
             
             Dim dt_promo_ebook As New DataTable
-            If Not Session("ebook_promotion") Is Nothing Then
-                dt_promo_ebook = DirectCast(Session("ebook_promotion"), DataTable).Copy
+            If Not Session("PROMOTION") Is Nothing Then
+                dt_promo_ebook = DirectCast(Session("PROMOTION"), DataTable).Copy
             End If
 
             Dim max_ebook_no As Integer = 0
@@ -734,26 +734,36 @@ Partial Class Customer_Order_Internet
 
         End If
 
-        
-
-        uCon = New uConnect
-        Dim dt_Promo_Discount As New DataTable
-        dt_Promo_Discount = uFunction.getDataTable(uCon.conn, "select convert(decimal(8,0), discount) as discount from ebook_promotion WHERE status = 1 AND promotion = 1")
-        If dt_Promo_Discount.Rows.Count > 0 Then
-            Dim discount As Double = 0.0
-            discount = CDbl(Session("original_total")) - CDbl(Session("amount_ebook"))
-            Me.lblpromo_discount.Text = "Promotion Discount (" + dt_Promo_Discount.Rows(0).Item("discount").ToString + "%)"
-            Me.lbldiscount.Text = discount.ToString("#,##0.00")
+        If Not Session("DISCOUNT") Is Nothing Then
+            Dim discount As Integer = Session("DISCOUNT")
             If discount > 0 Then
-                promo_discount = CDbl(dt_Promo_Discount.Rows(0).Item("discount").ToString)
-                promo_discount_amount = discount
+                Me.lblpromo_discount.Text = Session("PROMOTION_NAME")
+                Me.lbldiscount.Text = discount.ToString("#,##0.00")
                 Me.P_ebook_promo.Visible = True
             Else
                 Me.P_ebook_promo.Visible = False
             End If
-        Else
-            Me.P_ebook_promo.Visible = False
         End If
+
+
+        'uCon = New uConnect
+        'Dim dt_Promo_Discount As New DataTable
+        'dt_Promo_Discount = uFunction.getDataTable(uCon.conn, "select convert(decimal(8,0), discount) as discount from ebook_promotion WHERE status = 1 AND promotion = 1")
+        'If dt_Promo_Discount.Rows.Count > 0 Then
+        '    Dim discount As Double = 0.0
+        '    discount = CDbl(Session("original_total")) - CDbl(Session("amount_ebook"))
+        '    Me.lblpromo_discount.Text = "Promotion Discount (" + dt_Promo_Discount.Rows(0).Item("discount").ToString + "%)"
+        '    Me.lbldiscount.Text = discount.ToString("#,##0.00")
+        '    If discount > 0 Then
+        '        promo_discount = CDbl(dt_Promo_Discount.Rows(0).Item("discount").ToString)
+        '        promo_discount_amount = discount
+        '        Me.P_ebook_promo.Visible = True
+        '    Else
+        '        Me.P_ebook_promo.Visible = False
+        '    End If
+        'Else
+        '    Me.P_ebook_promo.Visible = False
+        'End If
 
     End Sub
 
