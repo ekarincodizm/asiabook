@@ -1663,7 +1663,8 @@ Public Class Class_book_search
         strsql &= " end as selling_price "
 
         strsql &= " , case search.source when 'Asiabooks' then ROUND(convert(numeric(18,4),search.selling),0) "
-        strsql &= " else ROUND(convert(numeric(18,4),(search.selling * isnull(search.exchange_rate,0))),0) "
+        strsql &= " else ROUND(convert(numeric(18,4),(search.selling * isnull(search.exchange_rate,0))) - "
+        strsql &= " convert(numeric(18,4),(search.selling * isnull(search.exchange_rate,0) * (search.ecom_discount)) / 100),0) "
         strsql &= " end as selling_price_ecomn "
 
         strsql &= " , case when search.other_format is null "
@@ -1677,7 +1678,7 @@ Public Class Class_book_search
         strsql &= " , case ebook.author when '' then '-' else ebook.author end as author , case ebook.author when '' then '-' else UPPER(ebook.author) end as author_search"
         strsql &= " , case ebook.publisher_name when '' then '-' else ebook.publisher_name end as publisher_name "
         strsql &= " , convert(numeric(18,4) , ebook.price_org) as selling , ebook.isbn_10 as image , cast(ebook.on_book as varchar) as other_format "
-        strsql &= " , ebook.supplier_code as source , cast(ebook.discount as varchar) ecom_discount , currency.exchange_rate "
+        strsql &= " , ebook.supplier_code as source , isnull(ebook.discount_sp,0) as ecom_discount , currency.exchange_rate "
         strsql &= " , cast(ebook.format_type as varchar) as format_type , UPPER(ebook.keyword) as keyword "
 
         strsql &= " from ebook_store ebook with (nolock) "

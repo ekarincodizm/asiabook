@@ -777,24 +777,24 @@ Public Class Class_book_detail
                 rowCount = rowCount + 1
             Next
             dataCart = datatable
-            Dim SqlDb As New SqlDb
-            Dim discountData As New DataTable
-            discountData = SqlDb.GetDataTable("SELECT buy , discount FROM ebook_promotion WHERE status = 1 AND promotion = 1")
-            Dim buy_ebook As Integer = 0
-            Dim discount As Double = 0
-            Dim totalPriceNew As Double = 0
-            If discountData.Rows.Count > 0 Then
-                buy_ebook = CInt(discountData.Rows(0).Item("buy"))
-                discount = CDbl(discountData.Rows(0).Item("discount"))
-            End If
+            'Dim SqlDb As New SqlDb
+            'Dim discountData As New DataTable
+            'discountData = SqlDb.GetDataTable("SELECT buy , discount FROM ebook_promotion WHERE status = 1 AND promotion = 1")
+            'Dim buy_ebook As Integer = 0
+            'Dim discount As Double = 0
+            'Dim totalPriceNew As Double = 0
+            'If discountData.Rows.Count > 0 Then
+            '    buy_ebook = CInt(discountData.Rows(0).Item("buy"))
+            '    discount = CDbl(discountData.Rows(0).Item("discount"))
+            'End If
 
-            If quantity >= buy_ebook Then
-                totalPriceNew = CDbl(total - (total * (discount / 100)))
-            Else
-                totalPriceNew = total
-            End If
-            original_total = CInt(total).ToString("#,###,###.00")
-            amount_ebook = CInt(totalPriceNew).ToString("#,###,###.00")
+            'If quantity >= buy_ebook Then
+            '    totalPriceNew = CDbl(total - (total * (discount / 100)))
+            'Else
+            '    totalPriceNew = total
+            'End If
+            'original_total = CInt(total).ToString("#,###,###.00")
+            amount_ebook = CInt(total).ToString("#,###,###.00")
         Else
             dc = New DataColumn()
             dc.DataType = System.Type.GetType("System.Int32")

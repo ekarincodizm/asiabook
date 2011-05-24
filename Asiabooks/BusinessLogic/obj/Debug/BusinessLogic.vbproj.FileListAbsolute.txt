@@ -28,3 +28,13 @@ D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\
 D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\BusinessLogic.dll
 D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\BusinessLogic.xml
 D:\SourceCode_BySVN\Project eCommerce\dev\source\WebAsiabooks\BusinessLogic\obj\Debug\BusinessLogic.pdb
+D:\work\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+D:\work\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\work\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\work\Asiabooks\BusinessLogic\bin\Debug\BusinessLogic.xml
+D:\work\Asiabooks\BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+D:\work\Asiabooks\BusinessLogic\obj\Debug\Eordering.BusinessLogic.Resources.resources
+D:\work\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.vbproj.GenerateResource.Cache
+D:\work\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\work\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.xml
+D:\work\Asiabooks\BusinessLogic\obj\Debug\BusinessLogic.pdb
