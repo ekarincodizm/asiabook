@@ -1249,7 +1249,7 @@ Partial Class ebook_detail
 
         datatable.Columns.Add("No", System.Type.GetType("System.String"))
         datatable.Columns.Add("ISBN_13", System.Type.GetType("System.String"))
-        datatable.Columns.Add("eBook_ID", System.Type.GetType("System.String"))
+        datatable.Columns.Add("Book_ID", System.Type.GetType("System.String"))
         datatable.Columns.Add("Book_Title", System.Type.GetType("System.String"))
         datatable.Columns.Add("Selling_Price", System.Type.GetType("System.String"))
         datatable.Columns.Add("Quantity", System.Type.GetType("System.String"))
@@ -1476,7 +1476,7 @@ Partial Class ebook_detail
         sql &= " , case when ebook.language is null then '-' else ebook.language end as language "
         sql &= " , case when ebook.synopsis is null then '-' else ebook.synopsis end as synopsis "
         sql &= " , convert(numeric(18,4) , ebook.price_org) as selling , ebook.isbn_10 as image , ebook.format_type "
-        sql &= " , '0' as discount , currency.exchange_rate , currency.exchange_rate_internet as exchange_internet , type.type as ebook_format "
+        sql &= " , isnull(ebook.discount_sp,0) as discount , currency.exchange_rate , currency.exchange_rate_internet as exchange_internet , type.type as ebook_format "
         sql &= " , isnull(ebook.discount_sp,0) as ecom_discount "
 
         sql &= " from ebook_store ebook with (nolock) "
@@ -1498,7 +1498,7 @@ Partial Class ebook_detail
             datarow = datatableNew.NewRow
             datarow("Book_Title") = datatable.Rows(0).Item("Book_Title").ToString
             datarow("ISBN_13") = datatable.Rows(0).Item("ISBN_13").ToString
-            datarow("eBook_ID") = datatable.Rows(0).Item("eBook_ID").ToString
+            datarow("Book_ID") = datatable.Rows(0).Item("eBook_ID").ToString
             datarow("Selling_Price") = datatable.Rows(0).Item("Selling_Price").ToString
             datarow("Quantity") = datatable.Rows(0).Item("Quantity").ToString
             datarow("Supplier") = datatable.Rows(0).Item("Supplier").ToString
@@ -1524,7 +1524,7 @@ Partial Class ebook_detail
             datarow = datatableNew.NewRow
             datarow("Book_Title") = datatable.Rows(0).Item("Book_Title").ToString
             datarow("ISBN_13") = datatable.Rows(0).Item("ISBN_13").ToString
-            datarow("eBook_ID") = datatable.Rows(0).Item("eBook_ID").ToString
+            datarow("Book_ID") = datatable.Rows(0).Item("eBook_ID").ToString
             datarow("Selling_Price") = datatable.Rows(0).Item("Selling_Price").ToString
             datarow("Quantity") = datatable.Rows(0).Item("Quantity").ToString
             datarow("Supplier") = datatable.Rows(0).Item("Supplier").ToString
