@@ -443,10 +443,10 @@
                                                                 </ItemTemplate>
                                                             </asp:TemplateColumn>
 
-                                                            <asp:TemplateColumn HeaderText = "eBook_ID"  Visible = "False">
+                                                            <asp:TemplateColumn HeaderText = "Book_ID"  Visible = "False">
                                                                 <ItemTemplate>
-                                                                    <asp:Label style = "text-align:right" id = "eBook_ID_ebook" runat = "server" width = "100%" 
-                                                                        Text='<%# DataBinder.Eval(Container.DataItem,"eBook_ID") %>'></asp:Label> 
+                                                                    <asp:Label style = "text-align:right" id = "Book_ID_ebook" runat = "server" width = "100%" 
+                                                                        Text='<%# DataBinder.Eval(Container.DataItem,"Book_ID") %>'></asp:Label> 
                                                                 </ItemTemplate>
                                                             </asp:TemplateColumn>
 
@@ -489,7 +489,7 @@
                                                                 <ItemTemplate>
                                                                     <asp:ImageButton style = "text-align:center" id = "b_ebook_delete" runat = "server" 
                                                                         ImageUrl = "~/images/bin.jpg" __designer:wfdid = "w22"
-                                                                        CommandArgument='<%# DataBinder.Eval(Container.DataItem,"eBook_id") %>' 
+                                                                        CommandArgument='<%# DataBinder.Eval(Container.DataItem,"Book_id") %>' 
                                                                         CommandName = "Delete" ></asp:ImageButton> 
                                                                 </ItemTemplate>
                                                                 <HeaderStyle width = "5%"></HeaderStyle>
@@ -600,10 +600,10 @@
                                                             <HeaderStyle width = "10%"></HeaderStyle>
                                                             </asp:TemplateColumn>
 
-                                                            <asp:TemplateColumn HeaderText = "eBook_ID"  Visible = "False">
+                                                            <asp:TemplateColumn HeaderText = "Book_ID"  Visible = "False">
                                                                 <ItemTemplate>
-                                                                    <asp:Label style = "text-align:right" id = "eBook_ID_ebook" runat = "server" width = "100%" 
-                                                                        Text='<%# DataBinder.Eval(Container.DataItem,"eBook_ID") %>'></asp:Label> 
+                                                                    <asp:Label style = "text-align:right" id = "Book_ID_ebook" runat = "server" width = "100%" 
+                                                                        Text='<%# DataBinder.Eval(Container.DataItem,"Book_ID") %>'></asp:Label> 
                                                                 </ItemTemplate>
                                                             </asp:TemplateColumn>
 
@@ -635,7 +635,7 @@
                                                                 <ItemTemplate>
                                                                     <asp:ImageButton style = "text-align:center" id = "b_ebook_free_delete" runat = "server" 
                                                                         ImageUrl = "~/images/bin.jpg" __designer:wfdid = "w22"
-                                                                        CommandArgument='<%# DataBinder.Eval(Container.DataItem,"eBook_id") %>' 
+                                                                        CommandArgument='<%# DataBinder.Eval(Container.DataItem,"Book_id") %>' 
                                                                         CommandName = "Delete" ></asp:ImageButton> 
                                                                 </ItemTemplate>
                                                                 <HeaderStyle width = "5%"></HeaderStyle>
